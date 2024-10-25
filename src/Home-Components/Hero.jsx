@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import * as Countdown from "countdown";  // Adjusted import statement
 import vagaraimarathon from "../assets/vagaraimarathon.jpg";
 import mega from "../assets/mega.jpg";
 
@@ -10,10 +9,17 @@ const Hero = () => {
     const targetDate = new Date("2025-01-16T00:00:00");
 
     const updateCountdown = () => {
-      const timeRemaining = Countdown(targetDate);
-      setTimeLeft(
-        `${timeRemaining.months}m - ${timeRemaining.days}d - ${timeRemaining.hours}h - ${timeRemaining.minutes}m - ${timeRemaining.seconds}s`
-      );
+      const now = new Date();
+      const timeRemaining = targetDate - now;
+
+      // Calculate time components
+      const months = Math.floor(timeRemaining / (1000 * 60 * 60 * 24 * 30));
+      const days = Math.floor((timeRemaining % (1000 * 60 * 60 * 24 * 30)) / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((timeRemaining % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutes = Math.floor((timeRemaining % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((timeRemaining % (1000 * 60)) / 1000);
+
+      setTimeLeft(`${months}m - ${days}d - ${hours}h - ${minutes}m - ${seconds}s`);
     };
 
     updateCountdown();
