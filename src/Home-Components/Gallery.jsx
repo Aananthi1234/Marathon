@@ -1,89 +1,71 @@
-import React, { useState } from "react";
-// import "react-image-lightbox/style.css";
-// import Lightbox from "react-image-lightbox";
+import React from "react";
+import img1 from "../assets/img1.jpeg";
+import img2 from "../assets/img2.jpeg";
+import img3 from "../assets/img3.jpeg";
+import img6 from "../assets/img6.jpeg";
+import img9 from "../assets/img9.jpeg";
+import img10 from "../assets/img10.jpeg";
+import img11 from "../assets/img11.jpeg";
+import img12 from "../assets/img12.jpeg";
+import img13 from "../assets/img13.jpeg";
+import img14 from "../assets/img14.jpeg";
+import img15 from "../assets/img15.jpeg";
+import img5 from "../assets/img5.jpeg";
+import marathon from "../assets/marathon.png";
 
-// Dummy image data for portfolio items
-const images = [
-  { src: "images/illustration-1.jpg", category: "photography", title: "Portfolio Item 1" },
-  { src: "images/illustration-2.jpg", category: "photography graphicdesign illustrations", title: "Portfolio Item 2" },
-  { src: "images/illustration-3.jpg", category: "branding graphicdesign", title: "Portfolio Item 3" },
-  { src: "images/illustration-4.jpg", category: "graphicdesign", title: "Portfolio Item 4" },
-//   { src: "images/illustration-5.jpg", category: "photography illustrations", title: "Portfolio Item 5" },
-  // Add more images as needed...
-];
-
-const categories = [
-  { name: "Photography", filter: ".photography" },
-  { name: "Graphic Design", filter: ".graphicdesign" },
-  { name: "Illustrations", filter: ".illustrations" },
-  { name: "Branding", filter: ".branding" },
-];
-
-const Portfolio = () => {
-  const [lightboxOpen, setLightboxOpen] = useState(false);
-  const [selectedImage, setSelectedImage] = useState(0);
-  const [activeFilter, setActiveFilter] = useState("all");
-
-  // Filtering logic
-  const filteredImages = activeFilter === "all"
-    ? images
-    : images.filter((image) => image.category.includes(activeFilter));
+const Gallery = () => {
+  const images = [
+    img1,
+    img2,
+    img3,
+    img6,
+    img9,
+    img10,
+    img11,
+    img12,
+    img13,
+    img14,
+    img15,
+    img5,
+  ];
 
   return (
     <>
-      {/* Filter Buttons */}
-      <div className="flex flex-wrap gap-3 justify-center py-5">
-        {categories.map((category) => (
-          <button
-            key={category.filter}
-            className={`btn btn-primary px-5 py-2 uppercase text-white ${activeFilter === category.filter.slice(1) ? "bg-blue-600" : "bg-blue-500 hover:bg-blue-600"} transition duration-300`}
-            onClick={() => setActiveFilter(category.filter.slice(1))}
+      <div className="w-full h-auto container mx-auto p-4">
+        <div className="flex justify-start items-center border-b-2 border-b-red-400 rounded-l-lg border-opacity-75 gap-4 ">
+          <h2 className="lg:w-16 lg:h-16  bg-gradient-to-r from-orange-400 via-red-400 to-pink-400 rounded-s-lg"></h2>
+          <h2
+            className="lg:text-4xl text-3xl p-1 font-bold tracking-wide bg-gradient-to-r from-orange-400 via-red-400 to-pink-400"
+            style={{
+              WebkitBackgroundClip: "text",
+              backgroundClip: "text",
+              color: "transparent",
+            }}
           >
-            {category.name}
-          </button>
-        ))}
-        <button
-          className={`btn btn-primary px-5 py-2 uppercase text-white ${activeFilter === "all" ? "bg-blue-600" : "bg-blue-500 hover:bg-blue-600"} transition duration-300`}
-          onClick={() => setActiveFilter("all")}
-        >
-          All
-        </button>
-      </div>
-
-      {/* Portfolio Grid */}
-      <div className="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 mb-20">
-        {filteredImages.map((image, index) => (
-          <div key={index} className="mb-4">
+            Gallery
+          </h2>
+          <div className="w-full flex  justify-end items-end bg-white opacity-75 lg:px-20 gap-5">
             <img
-              src={image.src}
-              alt={image.title}
-              className="img-fluid rounded-4 cursor-pointer"
-              onClick={() => {
-                setSelectedImage(index);
-                setLightboxOpen(true);
-              }}
+              src={marathon}
+              alt=""
+              className="w-24 h-20 object-cover z-10 p-1"
             />
           </div>
-        ))}
+        </div>
+        <div className="grid lg:grid-cols-3 md:grid-cols-3 grid-cols-2 gap-5 lg:pt-10">
+          {images.map((image, index) => (
+            <div key={index} className="w-full h-auto rounded-lg">
+              <img
+                src={image}
+                alt={`Gallery Image ${index + 1}`}
+                className="w-full h-60 object-cover p-2 rounded-lg shadow-lg border-[1px] border-orange-500 transition-transform duration-500 ease-in-out hover:scale-105 hover:shadow-xl hover:border-red-500"
+              />
+            </div>
+          ))}
+        </div>
       </div>
-
-      {/* Lightbox */}
-      {lightboxOpen && (
-        <Lightbox
-          mainSrc={filteredImages[selectedImage].src}
-          nextSrc={filteredImages[(selectedImage + 1) % filteredImages.length].src}
-          prevSrc={filteredImages[(selectedImage + filteredImages.length - 1) % filteredImages.length].src}
-          onCloseRequest={() => setLightboxOpen(false)}
-          onMovePrevRequest={() =>
-            setSelectedImage((selectedImage + filteredImages.length - 1) % filteredImages.length)
-          }
-          onMoveNextRequest={() =>
-            setSelectedImage((selectedImage + 1) % filteredImages.length)
-          }
-        />
-      )}
     </>
   );
 };
 
-export default Portfolio;
+export default Gallery;

@@ -58,6 +58,7 @@ const Hero = () => {
           backgroundRepeat: "no-repeat",
           backgroundSize: "cover",
           backgroundPosition: "center",
+          opacity:0.8
         }}
       >
         <h1

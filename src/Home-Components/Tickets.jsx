@@ -1,19 +1,37 @@
 import React from "react";
 import { FaArrowRightLong } from "react-icons/fa6";
 import { GiCheckMark } from "react-icons/gi";
-import offer from "../assets/offer.png"
+import cup from "../assets/cup.png"
+import { FaMedal } from "react-icons/fa6";
+import { LiaCertificateSolid } from "react-icons/lia";
+import { GiTakeMyMoney } from "react-icons/gi";
+import { BsFillHouseFill } from "react-icons/bs";
+import { PiTShirtFill } from "react-icons/pi";
+import { GiCoffeeCup } from "react-icons/gi";
+import { GiBowlOfRice } from "react-icons/gi";
 
 const Tickets = () => {
+  const icons = [
+    { id: 1, icon: <LiaCertificateSolid />, text: "CERTIFICATE" },
+    { id: 2, icon: <FaMedal />, text: "MEDAL" },
+    { id: 3, icon: <GiTakeMyMoney />, text: "PRICE AMOUNT" },
+  ];
+  const icons1 = [
+    { id: 1, icon: <BsFillHouseFill />, text: "ACCOMDATION" },
+    { id: 2, icon: <PiTShirtFill />, text: "T-SHIRT" },
+    { id: 3, icon: <GiCoffeeCup />, text: "REFRESHMENTS" },
+    { id: 4, icon: <GiBowlOfRice />, text: "FOOD" },
+  ];
+
   return (
     <>
       <div className="w-full h-auto container mx-auto lg:py-20 py-10">
+
         <div className="w-full lg:h-[500px] flex lg:flex-row flex-col items-center justify-center gap-10 lg:px-10 px-5">
           {/* Ticket 1 */}
-          
+
           <div className="flex flex-col items-center justify-center hover:scale-[1.05] transform transition-all duration-500">
-          
             <div className="border-[1px] hover:border-2 border-green-300 text-center shadow-xl hover:shadow-2xl w-[350px] h-[400px] rounded-lg lg:py-10">
-            
               <h2
                 className="lg:text-4xl text-2xl font-extrabold tracking-wider lg:px-10 lg:py-7 bg-gradient-to-r from-orange-400 via-red-400 to-pink-400 text-white my-5 text-center"
                 style={{ textShadow: "2px 2px 4px rgba(0,0,0,0.7)" }}
@@ -47,9 +65,8 @@ const Tickets = () => {
           </div>
 
           {/* Ticket 2 */}
-      
+
           <div className="flex flex-col items-center justify-center hover:scale-[1.05] transform transition-all duration-500">
-            
             <div className="border-[1px] hover:border-2 border-red-300 text-center  shadow-xl hover:shadow-2xl  w-[350px] h-[450px] rounded-lg lg:py-8">
               <h1
                 className="lg:text-2xl text-xl  font-extrabold text-primary tracking-wider uppercase"
@@ -113,6 +130,45 @@ const Tickets = () => {
             </button>
           </div>
         </div>
+ 
+        <img src={cup} alt="" className="w-[30%] h-auto p-5 mx-auto"/>
+
+        <div className="w-[80%] h-auto p-5 mx-auto flex flex-col items-center justify-center gap-20 lg:py-10 py-5">
+          <div className="grid lg:grid-cols-3 md:grid-cols-3 grid-cols-2 gap-20 lg:pt-5 ">
+            {icons.map((choose, index) => (
+              <div
+                key={index}
+                className="w-full flex flex-col justify-center items-center  h-auto rounded-lg "
+              >
+                <h2 className="w-20 h-20 object-cover p-2 rounded-lg shadow-lg border-2 border-white transition-all transform duration-500 ease-in-out hover:scale-105 hover:shadow-xl  bg-gradient-to-r from-orange-400 via-red-400 to-pink-400  flex justify-center items-center">
+                  <p className="text-4xl text-white font-extrabold p-1">
+                    {choose.icon}
+                  </p>
+                </h2>
+                <p className="text-lg font-semibold text-gray-500 mt-3 tracking-wider">
+                  {choose.text}
+                </p>
+              </div>
+            ))}
+          </div>
+          <div className="grid lg:grid-cols-4 md:grid-cols-3 grid-cols-2 gap-20 ">
+            {icons1.map((choose1, index) => (
+              <div
+                key={index}
+                className="w-full flex flex-col justify-center items-center  h-auto rounded-lg"
+              >
+                <h2 className="w-20 h-20 object-cover p-2 rounded-lg shadow-lg border-2 border-white transition-all transform duration-500 ease-in-out hover:scale-105 hover:shadow-xl bg-gradient-to-r from-orange-400 via-red-400 to-pink-400   flex justify-center items-center">
+                  <p className="text-4xl text-white  font-extrabold p-1">
+                    {choose1.icon}
+                  </p>
+                </h2>
+                <p className="text-lg font-semibold text-gray-500 mt-3 tracking-wider">
+                  {choose1.text}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
       </div>
     </>
   );
@@ -120,4 +176,6 @@ const Tickets = () => {
 
 export default Tickets;
 
-    {/* <img src={offer} alt="offer" className="w-28 h-28 translate-y-16 -translate-x-36 flex justify-start items-center" /> */}
+{
+  /* <img src={offer} alt="offer" className="w-28 h-28 translate-y-16 -translate-x-36 flex justify-start items-center" /> */
+}

@@ -16,7 +16,7 @@ const Banner = () => {
         }}
       >
         {/* Apply the opacity only to a background overlay */}
-        <div className="absolute inset-0 w-full h-full bg-black opacity-60"></div>
+        <div className="absolute inset-0 w-full h-full bg-black opacity-70"></div>
 
         <div className="absolute inset-0 w-full h-[600px] flex  justify-center items-center">
           <p className="relative w-[90%] h-[400px]  bg-gradient-to-r from-white via-rose-50 to-blue-50 lg:p-10 p-5 rounded-xl shadow-lg flex justify-center items-center border-secondary border-2 ">
