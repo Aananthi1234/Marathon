@@ -52,7 +52,7 @@ const Gallery = () => {
             />
           </div>
         </div>
-        <div className="grid lg:grid-cols-3 md:grid-cols-3 grid-cols-2 gap-5 lg:pt-10 pt-5 ">
+        <div className="grid lg:grid-cols-3 md:grid-cols-3 grid-cols-2 gap-5 lg:pt-10  ">
           {images.map((image, index) => (
             <div key={index} className="w-full h-auto rounded-lg">
               <img
