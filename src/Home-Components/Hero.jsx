@@ -30,20 +30,17 @@ const Hero = () => {
 
   return (
     <>
-      <div className="relative w-full h-[600px]">
+      {/* Hero Section */}
+      <div className="relative w-full h-[300px] md:h-[450px] lg:h-[600px]">
         <div
-          className="absolute inset-0 w-full h-[600px] object-contain p-5"
+          className="absolute inset-0 w-full h-full bg-cover bg-center opacity-60"
           style={{
             backgroundImage: `url(${vagaraimarathon})`,
-            backgroundRepeat: "no-repeat",
-            backgroundSize: "cover",
-            backgroundPosition: "center",
-            opacity: 0.6,
           }}
         ></div>
-        <div className="relative w-full h-[120px] text-center flex flex-col justify-center items-center">
+        <div className="relative w-full h-full flex flex-col justify-center items-center p-4">
           <h1
-            className="lg:text-5xl text-xl font-extrabold bg-gradient-to-r from-orange-400 via-red-400 to-pink-400 text-white tracking-wide p-3 rounded-md"
+            className="text-xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold text-white bg-gradient-to-r from-orange-400 via-red-400 to-pink-400 tracking-wide p-3 rounded-md shadow-lg text-center"
             style={{ textShadow: "2px 2px 4px rgba(0,0,0,0.7)" }}
           >
             Welcome to the Mega Marathon
@@ -51,24 +48,22 @@ const Hero = () => {
         </div>
       </div>
 
+      {/* Countdown Section */}
       <div
-        className="lg:w-[90%] text-white flex flex-col justify-center items-center shadow-lg rounded-lg gap-6 lg:my-10 py-8 border-2 border-em"
+        className="w-full md:w-11/12 lg:w-3/4 xl:w-2/3  my-8 mx-5 p-5 lg:py-8 flex flex-col justify-center items-center text-white shadow-lg rounded-lg border-2 border-em bg-cover bg-center"
         style={{
           backgroundImage: `url(${mega})`,
-          backgroundRepeat: "no-repeat",
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-          opacity:0.8
+          opacity: 0.8,
         }}
       >
         <h1
-          className="text-secondary lg:text-3xl text-lg font-semibold tracking-wide font-mono"
+          className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold tracking-wide font-mono text-secondary text-center"
           style={{ textShadow: "2px 2px 2px rgba(0,0,0,0.7)" }}
         >
           Ready, Set, Go! Countdown to the Mega Marathon!
         </h1>
         <p
-          className="lg:text-5xl text-2xl font-bold tracking-wider"
+          className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold tracking-wider text-center mt-4"
           style={{ textShadow: "2px 2px 4px rgba(0,0,0,0.7)" }}
         >
           {timeLeft}

@@ -52,13 +52,13 @@ const Gallery = () => {
             />
           </div>
         </div>
-        <div className="grid lg:grid-cols-3 md:grid-cols-3 grid-cols-2 gap-5 lg:pt-10">
+        <div className="grid lg:grid-cols-3 md:grid-cols-3 grid-cols-2 gap-5 lg:pt-10 pt-5 ">
           {images.map((image, index) => (
             <div key={index} className="w-full h-auto rounded-lg">
               <img
                 src={image}
                 alt={`Gallery Image ${index + 1}`}
-                className="w-full h-60 object-cover p-2 rounded-lg shadow-lg border-[1px] border-orange-500 transition-transform duration-500 ease-in-out hover:scale-105 hover:shadow-xl hover:border-red-500"
+                className="w-full lg:h-60 h-40 object-cover p-2 rounded-lg shadow-lg border-[1px] border-orange-500 transition-transform duration-500 ease-in-out hover:scale-105 hover:shadow-xl hover:border-red-500"
               />
             </div>
           ))}

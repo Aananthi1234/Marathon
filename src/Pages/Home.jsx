@@ -4,6 +4,7 @@ import Hero from "../Home-Components/Hero"
 import About from "../Home-Components/About"
 import Banner from "../Home-Components/Banner"
 import Tickets from "../Home-Components/Tickets"
+import Cup from "../Home-Components/Cup"
 import Sponsers from "../Home-Components/Sponsers"
 import Gallery from "../Home-Components/Gallery"
 
@@ -20,6 +21,7 @@ const Home = () => {
       <About/>
       <Banner/>
       <Tickets/>
+      <Cup/>
       <Sponsers/>
       <Gallery/>
     </div>
