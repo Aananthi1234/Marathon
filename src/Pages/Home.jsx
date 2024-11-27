@@ -6,6 +6,7 @@ import Banner from "../Home-Components/Banner"
 import Tickets from "../Home-Components/Tickets"
 import Cup from "../Home-Components/Cup"
 import Sponsers from "../Home-Components/Sponsers"
+import Sponser from "../Home-Components/Sponser"
 import Gallery from "../Home-Components/Gallery"
 
 const Home = () => {
@@ -22,8 +23,9 @@ const Home = () => {
       <Banner/>
       <Tickets/>
       <Cup/>
-      <Sponsers/>
+      <Sponser/>
       <Gallery/>
+      <Sponsers/>
     </div>
   );
 };
