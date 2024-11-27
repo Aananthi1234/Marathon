@@ -15,7 +15,7 @@ const Banner = () => {
 
       {/* Content container */}
       <div className="absolute inset-0 flex justify-center items-center">
-        <div className="relative px-5 lg:px-0 py-5 lg:py-0 lg:w-[95%] max-w-5xl lg:h-[400px] bg-gradient-to-r from-white via-rose-50 to-blue-50  lg:p-10 rounded-xl shadow-lg flex flex-col lg:flex-row items-center gap-6 lg:border-2 lg:border-secondary">
+        <div className="relative px-5 lg:px-10 py-5 lg:py-0 lg:w-[95%] max-w-5xl lg:h-[400px] bg-gradient-to-r from-white via-rose-50 to-blue-50  lg:p-10 rounded-xl shadow-lg flex flex-col lg:flex-row items-center gap-6 lg:border-2 lg:border-secondary">
           {/* Left image */}
           <img
             src={run}
