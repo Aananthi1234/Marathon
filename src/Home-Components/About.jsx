@@ -29,12 +29,12 @@ const About = () => {
         <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-primary tracking-wide uppercase lg:text-left text-center">
           Vagarai Mega <span className="text-secondary">Marathon</span>
         </h2>
-        <p className="text-base sm:text-lg lg:text-xl font-medium text-gray-700 tracking-wide py-3 lg:py-5 leading-relaxed">
+        <p className="text-base sm:text-lg lg:text-xl font-medium text-gray-700 tracking-wide py-3 lg:py-5 leading-relaxed text-justify">
           Join us for the Mega Marathon in Vagarai, Palani District on January 16, 2025! A celebration of community,
           health, and the joy of running! We invite participants of all ages and skill levels to experience the scenic
           beauty of our village while promoting fitness and camaraderie.
         </p>
-        <p className="text-base sm:text-lg lg:text-xl font-medium text-gray-700 tracking-wide py-2 lg:py-4 leading-relaxed">
+        <p className="text-base sm:text-lg lg:text-xl font-medium text-gray-700 tracking-wide py-2 lg:py-4 leading-relaxed text-justify">
           This annual event brings together runners from across the region to promote health, fitness, and community
           spirit. Whether you're an experienced marathoner or a first-time runner, our event is designed for
           participants of all levels. Together, let's make strides towards a healthier lifestyle!
