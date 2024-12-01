@@ -5,7 +5,7 @@ import run from "../assets/run.png";
 const Banner = () => {
   return (
     <div
-      className="relative w-full h-[400px] md:h-[500px] lg:h-[600px] bg-cover bg-center lg:my-0 my-20"
+      className="relative w-full h-[400px] md:h-[500px] lg:h-[600px] bg-cover bg-center lg:my-0 my-20 "
       style={{
         backgroundImage: `url(${sport})`,
       }}
@@ -20,58 +20,58 @@ const Banner = () => {
           <img
             src={run}
             alt="run"
-            className="w-full lg:w-[40%] h-auto lg:h-60 object-contain"
+            className="w-full lg:w-[40%] h-auto sm:h-40 lg:h-60 object-contain"
           />
          <section className="w-[25%] h-auto border-2 border-secondary lg:block hidden"></section>
           {/* Right text section */}
-          <section className="w-full  lg:w-[100%] p-5 rounded-lg bg-white shadow-lg text-gray-700 border-2 border-primary leading-relaxed">
-            <h2 className="text-xl lg:text-3xl font-bold tracking-wider uppercase text-secondary pb-3" style={{ textShadow: "2px 2px 2px rgba(248,249,240,0.7)" }}>
+          <section className="w-full  lg:w-[100%] sm:p-5 p-3 rounded-lg bg-white shadow-lg text-gray-700 border-2 border-primary leading-relaxed">
+            <h2 className="text-sm sm:text-xl lg:text-3xl font-bold tracking-wider uppercase text-secondary pb-3" style={{ textShadow: "2px 2px 2px rgba(248,249,240,0.7)" }}>
               Marathon Details
             </h2>
-            <div className="flex items-center gap-2">
-              <h2 className="text-medium lg:text-xl font-medium tracking-wide">
+            <div className="flex items-center gap-2 ">
+              <h2 className="text-sm sm:text-medium lg:text-xl font-medium tracking-wide">
                 Location :
               </h2>
-              <p className="text-medium lg:text-xl tracking-wider">
+              <p className="text-sm sm:text-medium  lg:text-xl tracking-wider">
                 Vagarai, Palani - 624613.
               </p>
             </div>
             <div className="flex items-center gap-2 py-2">
-              <h2 className="text-medium lg:text-xl font-medium tracking-wide">
+              <h2 className="text-sm sm:text-medium  lg:text-xl font-medium tracking-wide">
                 Date :
               </h2>
-              <p className="text-medium lg:text-xl tracking-wider">
+              <p className="text-sm sm:text-medium  lg:text-xl tracking-wider">
                 January 16, 2025.
               </p>
             </div>
             <div className="flex items-center gap-2">
-              <h2 className="text-medium lg:text-xl font-medium tracking-wide">
+              <h2 className="text-sm sm:text-medium  lg:text-xl font-medium tracking-wide">
                 Time to start :
               </h2>
-              <p className="text-medium lg:text-xl tracking-wider">6 am.</p>
+              <p className="text-sm sm:text-medium  lg:text-xl tracking-wider">6 am.</p>
             </div>
             <div className="flex items-center gap-2 py-2">
-              <h2 className="text-medium lg:text-xl font-medium tracking-wide">
+              <h2 className="text-sm sm:text-medium  lg:text-xl font-medium tracking-wide">
                 Registration fees :
               </h2>
-              <p className="text-medium lg:text-xl tracking-wider">
+              <p className="text-sm sm:text-medium  lg:text-xl tracking-wider">
                 Rs.100 Only.
               </p>
             </div>
             <div className="flex items-center gap-2">
-              <h2 className="text-medium lg:text-xl font-medium tracking-wide">
+              <h2 className="text-sm sm:text-medium  lg:text-xl font-medium tracking-wide">
                 Distance :
               </h2>
-              <p className="text-medium lg:text-xl tracking-wider">
+              <p className="text-sm sm:text-medium lg:text-xl tracking-wider">
                 Boys (10 km) - Girls (5 km).
               </p>
             </div>
             <div className="flex items-center gap-2 py-2">
-              <h2 className="text-medium lg:text-xl font-medium tracking-wide">
+              <h2 className="text-sm sm:text-medium  lg:text-xl font-medium tracking-wide">
                 Participants :
               </h2>
-              <p className="text-medium lg:text-xl tracking-wider">
-                All age groups allowed.
+              <p className="text-sm sm:text-medium  lg:text-xl tracking-wider">
+                All age groups.
               </p>
             </div>
           </section>

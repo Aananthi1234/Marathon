@@ -50,7 +50,7 @@ const Hero = () => {
 
       {/* Countdown Section */}
       <div
-        className="md:w-11/12 lg:w-3/4 xl:w-2/3  my-8 mx-5 p-5 lg:py-8 flex flex-col justify-center items-center text-white shadow-lg rounded-lg border-2 border-em bg-cover bg-center"
+        className="md:w-11/12 lg:w-3/4 xl:w-2/3  my-8 mx-3 sm:mx-4 p-5 lg:py-8 flex flex-col justify-center items-center text-white shadow-lg rounded-lg border-2 border-em bg-cover bg-center"
         style={{
           backgroundImage: `url(${mega})`,
           opacity: 0.8,

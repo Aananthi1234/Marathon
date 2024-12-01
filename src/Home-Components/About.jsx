@@ -4,7 +4,7 @@ import mega from "../assets/mega.jpg";
 
 const About = () => {
   return (
-    <div className="w-full flex flex-col lg:flex-row justify-center items-center lg:my-16 lg:py-5 lg:px-20 px-6 gap-10 lg:gap-20">
+    <div className="w-full flex flex-col lg:flex-row justify-center items-center mb-8 lg:my-16 lg:py-5 lg:px-20 px-6 gap-10 lg:gap-20">
       {/* Left Box Container */}
       <div className="w-full lg:w-1/2 relative h-[300px] md:min-h-[600px] lg:h-[600px] text-center flex justify-center items-center ">
         {/* Box 1 */}
@@ -21,11 +21,11 @@ const About = () => {
           style={{ top: '150px', left: '150px' }}
         >
           <img src={megamarathon} alt="vagarai-marathon" className="h-full w-full rounded-lg object-cover" />
-        </div>
+        </div> 
       </div>
 
       {/* Right Box Container */}
-      <div className="w-full lg:w-1/2 min-h-[400px] md:min-h-[600px] lg:min-h-[600px] px-5 flex flex-col justify-center lg:text-left text-center  ">
+      <div className="w-full lg:w-1/2 am:min-h-[400px] md:min-h-[600px] lg:min-h-[600px] px-3 flex flex-col justify-center lg:text-left text-center  ">
         <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-primary tracking-wide uppercase lg:text-left text-center">
           Vagarai Mega <span className="text-secondary">Marathon</span>
         </h2>

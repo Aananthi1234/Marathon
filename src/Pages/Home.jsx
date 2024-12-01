@@ -5,7 +5,7 @@ import About from "../Home-Components/About"
 import Banner from "../Home-Components/Banner"
 import Tickets from "../Home-Components/Tickets"
 import Cup from "../Home-Components/Cup"
-import Sponsers from "../Home-Components/Sponsers"
+import Media from "../Home-Components/Media"
 import Sponser from "../Home-Components/Sponser"
 import Gallery from "../Home-Components/Gallery"
 
@@ -22,10 +22,10 @@ const Home = () => {
       <About/>
       <Banner/>
       <Tickets/>
-      <Cup/>
-      <Sponser/>
+      <Cup/> 
       <Gallery/>
-      <Sponsers/>
+      <Media/>
+      <Sponser/>
     </div>
   );
 };
