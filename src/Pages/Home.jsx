@@ -17,7 +17,7 @@ const Home = () => {
 
   return (
     <div
-      className="w-full h-[500%] flex flex-col justify-center items-center " data-aos="fade-up" >
+      className="w-full h-[500%] flex flex-col justify-center items-center " data-aos="fade-up">
       <Hero/>
       <About/>
       <Banner/>

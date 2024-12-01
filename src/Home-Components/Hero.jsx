@@ -50,7 +50,7 @@ const Hero = () => {
 
       {/* Countdown Section */}
       <div
-        className="w-full md:w-11/12 lg:w-3/4 xl:w-2/3  my-8 mx-5 p-5 lg:py-8 flex flex-col justify-center items-center text-white shadow-lg rounded-lg border-2 border-em bg-cover bg-center"
+        className="md:w-11/12 lg:w-3/4 xl:w-2/3  my-8 mx-5 p-5 lg:py-8 flex flex-col justify-center items-center text-white shadow-lg rounded-lg border-2 border-em bg-cover bg-center"
         style={{
           backgroundImage: `url(${mega})`,
           opacity: 0.8,
@@ -63,7 +63,7 @@ const Hero = () => {
           Ready, Set, Go! Countdown to the Mega Marathon!
         </h1>
         <p
-          className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold tracking-wider text-center mt-4"
+          className="text-xl sm:text-3xl md:text-4xl lg:text-5xl font-bold tracking-wider text-center mt-4"
           style={{ textShadow: "2px 2px 4px rgba(0,0,0,0.7)" }}
         >
           {timeLeft}
