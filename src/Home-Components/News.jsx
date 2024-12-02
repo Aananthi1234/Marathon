@@ -2,15 +2,15 @@ import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import news1 from "../assets/news/news1.jpeg";
-import news2 from "../assets/news/news2.jpeg";
-import news3 from "../assets/news/news3.jpeg";
-import news4 from "../assets/news/news4.jpeg";
-import news5 from "../assets/news/news5.jpeg";
-import news6 from "../assets/news/news6.jpeg";
-import news7 from "../assets/news/news7.jpeg";
-import news8 from "../assets/news/news8.jpeg";
-import news9 from "../assets/news/news9.jpeg";
+import news1 from "../assets/News/news1.jpeg";
+import news2 from "../assets/News/news2.jpeg";
+import news3 from "../assets/News/news3.jpeg";
+import news4 from "../assets/News/news4.jpeg";
+import news5 from "../assets/News/news5.jpeg";
+import news6 from "../assets/News/news6.jpeg";
+import news7 from "../assets/News/news7.jpeg";
+import news8 from "../assets/News/news8.jpeg";
+import news9 from "../assets/News/news9.jpeg";
 
 const NextArrow = ({ onClick }) => (
   <div
