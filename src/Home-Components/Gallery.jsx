@@ -35,14 +35,14 @@ const Gallery = () => {
         <div className="flex justify-start items-center border-b-2 border-b-red-400 rounded-l-lg border-opacity-75 gap-4 ">
           <h2 className="lg:w-16 lg:h-16  bg-gradient-to-r from-orange-400 via-red-400 to-pink-400 rounded-s-lg"></h2>
           <h2
-            className="lg:text-4xl text-3xl p-1 font-bold tracking-wide bg-gradient-to-r from-orange-400 via-red-400 to-pink-400"
+            className="lg:text-4xl text-xl p-1 font-bold tracking-wide bg-gradient-to-r from-orange-400 via-red-400 to-pink-400"
             style={{
               WebkitBackgroundClip: "text",
               backgroundClip: "text",
               color: "transparent",
             }}
           >
-            Gallery
+            Medals & Certificates
           </h2>
           <div className="w-full flex  justify-end items-end bg-white opacity-75 lg:px-20 gap-5">
             <img

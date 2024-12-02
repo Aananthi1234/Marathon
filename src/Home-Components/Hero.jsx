@@ -43,7 +43,7 @@ const Hero = () => {
             className="text-xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold text-white bg-gradient-to-r from-orange-400 via-red-400 to-pink-400 tracking-wide p-3 rounded-md shadow-lg text-center"
             style={{ textShadow: "2px 2px 4px rgba(0,0,0,0.7)" }}
           >
-            Welcome to the Mega Marathon
+          Vagarai Pasumai Marathon
           </h1>
         </div>
       </div>

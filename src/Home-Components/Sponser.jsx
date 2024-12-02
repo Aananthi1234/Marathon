@@ -15,9 +15,9 @@ const SponsorsSlider = () => {
   ];
 
   return (
-    <div className="bg-white lg:my-20 my-10 lg:py-10 px-5 w-full lg:w-[90%] h-auto flex flex-col justify-center items-center overflow-hidden rounded-md">
+    <div className="bg-white lg:my-5 my-10 lg:py-10 px-5 w-full lg:w-[90%] h-auto flex flex-col justify-center items-center overflow-hidden rounded-md">
       <h2
-        className="w-full lg:text-5xl text-3xl font-bold text-center tracking-wide lg:mb-10 py-5 bg-gradient-to-r from-orange-400 via-red-400 to-pink-400"
+        className="w-full lg:text-5xl text-2xl font-bold text-center tracking-wide lg:mb-10 py-5 bg-gradient-to-r from-orange-400 via-red-400 to-pink-400"
         style={{
           WebkitBackgroundClip: "text",
           backgroundClip: "text",
