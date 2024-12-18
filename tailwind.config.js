@@ -23,6 +23,15 @@ export default {
           // 'green':'#00712D'
          
         },
+        keyframes: {
+          slide: {
+            "0%": { transform: "translateX(100%)" },
+            "100%": { transform: "translateX(-100%)" },
+          },
+        },
+        animation: {
+          slide: "slide 16s linear infinite",
+        },
       },
     },
 

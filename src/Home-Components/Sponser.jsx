@@ -1,8 +1,14 @@
 import React from "react";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import olir from "../assets/olir.png";
 import sasi from "../assets/sasi.jpeg";
 import core from "../assets/core.jpeg";
 import avis from "../assets/avis.png";
+import sds from "../assets/sdslogo.png";
+import dayu from "../assets/DayuMart.png";
+import magic from "../assets/magic.jpeg";
 
 const SponsorsSlider = () => {
   // Sponsor data
@@ -11,13 +17,50 @@ const SponsorsSlider = () => {
     { img: sasi, name: "SasiKumar Edits" },
     { img: core, name: "Olir Media Core" },
     { img: avis, name: "Avis Media" },
-    { img: sasi, name: "Focuz Technology" },
+    { img: sds, name: "SDS Technology" },
+    { img: dayu, name: "Dayu Mart" },
+    { img: magic, name: "Magic Computers" },
   ];
+
+  // Slider settings
+  const settings = {
+    dots: false,
+    infinite: true,
+    speed: 1000,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
+  };
 
   return (
     <div className="bg-white lg:my-5 my-10 lg:py-10 px-5 w-full lg:w-[90%] h-auto flex flex-col justify-center items-center overflow-hidden rounded-md">
+      {/* Title */}
       <h2
-        className="w-full lg:text-5xl text-2xl font-bold text-center tracking-wide lg:mb-10 py-5 bg-gradient-to-r from-orange-400 via-red-400 to-pink-400"
+        className="w-full lg:text-4xl text-2xl font-bold text-center tracking-wide lg:mb-10 py-5 bg-gradient-to-r from-orange-400 via-red-400 to-pink-400"
         style={{
           WebkitBackgroundClip: "text",
           backgroundClip: "text",
@@ -26,22 +69,30 @@ const SponsorsSlider = () => {
       >
         Our Sponsors & Partners
       </h2>
-      <div className="w-full max-w-screen-lg mx-auto py-5 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-8">
-        {sponsors.map((sponsor, index) => (
-          <div
-            key={index}
-            className="flex flex-col items-center justify-center text-center gap-3 p-3 transform transition-all duration-500"
-          >
-            <img
-              src={sponsor.img}
-              alt={sponsor.name}
-              className="w-28 h-28 sm:w-32 sm:h-32 lg:w-40 lg:h-40 mx-auto object-contain mb-3 hover:shadow-none"
-            />
-            {/* <h3 className="w-full text-sm sm:text-base lg:text-base font-semibold text-blue-500 text-center tracking-wider uppercase">
-              {sponsor.name}
-            </h3> */}
-          </div>
-        ))}
+
+      {/* Slider */}
+      <div className="w-full max-w-screen-lg mx-auto ">
+        <Slider {...settings}>
+          {sponsors.map((sponsor, index) => (
+            <div
+              key={index}
+              className="w-full h-full flex flex-col justify-center items-center text-center p-4  "
+            >
+              {/* Image Wrapper */}
+              <div className="w-28 h-28 sm:w-32 sm:h-32 lg:w-36 lg:h-36 flex justify-center items-center rounded-full border-[1px] border-green-700 shadow-lg transition-all duration-300 hover:scale-105 mx-auto">
+                <img
+                  src={sponsor.img}
+                  alt={sponsor.name}
+                  className="w-full h-full object-contain rounded-full "
+                />
+              </div>
+              {/* Sponsor Name */}
+              <h3 className="text-xs sm:text-sm lg:text-sm font-semibold text-gray-600 text-center tracking-wider uppercase mt-3">
+                {sponsor.name}
+              </h3>
+            </div>
+          ))}
+        </Slider>
       </div>
     </div>
   );

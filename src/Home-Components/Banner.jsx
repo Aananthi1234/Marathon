@@ -74,6 +74,9 @@ const Banner = () => {
                 All age groups.
               </p>
             </div>
+            <div className="text-center">
+              <h2 className="text-sm sm:text-base lg:text-base tracking-wide py-1">Fees apply to other districts. No fees for Dindigul.</h2>
+            </div>
           </section>
         </div>
       </div>

@@ -9,6 +9,7 @@ import Media from "../Home-Components/Media"
 import Sponser from "../Home-Components/Sponser"
 import Gallery from "../Home-Components/Gallery"
 import News from "../Home-Components/News"
+import PromotionPartners from "../Home-Components/Promotionpartners";
 
 const Home = () => {
   // Scroll to the top of the page when the component is mounted
@@ -20,6 +21,8 @@ const Home = () => {
     <div
       className="w-full h-[500%] flex flex-col justify-center items-center " data-aos="fade-up">
       <Hero/>
+      <Sponser/>
+      <PromotionPartners/>
       <About/>
       <Banner/>
       <Tickets/>
@@ -27,7 +30,7 @@ const Home = () => {
       <Gallery/>
       <Media/>
       <News/>
-      <Sponser/>
+      
     </div>
   );
 };
