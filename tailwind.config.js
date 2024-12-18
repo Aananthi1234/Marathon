@@ -30,7 +30,7 @@ export default {
           },
         },
         animation: {
-          slide: "slide 16s linear infinite",
+          slide: "slide 30s linear infinite",
         },
       },
     },
