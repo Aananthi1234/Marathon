@@ -25,57 +25,54 @@ const Banner = () => {
          <section className="w-[25%] h-auto border-2 border-secondary lg:block hidden"></section>
           {/* Right text section */}
           <section className="w-full  lg:w-[100%] sm:p-5 p-3 rounded-lg bg-white shadow-lg text-gray-700 border-2 border-primary leading-relaxed">
-            <h2 className="text-sm sm:text-xl lg:text-3xl font-bold tracking-wider uppercase text-secondary pb-3" style={{ textShadow: "2px 2px 2px rgba(248,249,240,0.7)" }}>
+            <h2 className="text-sm sm:text-xl lg:text-3xl font-bold r uppercase text-secondary pb-3" style={{ textShadow: "2px 2px 2px rgba(248,249,240,0.7)" }}>
               Marathon Details
             </h2>
             <div className="flex items-center gap-2 ">
-              <h2 className="text-sm sm:text-medium lg:text-xl font-medium tracking-wide">
+              <h2 className="text-sm sm:text-medium lg:text-xl font-medium ">
                 Location :
               </h2>
-              <p className="text-sm sm:text-medium  lg:text-xl tracking-wider">
+              <p className="text-sm sm:text-medium  lg:text-xl r">
                 Vagarai, Palani - 624613.
               </p>
             </div>
             <div className="flex items-center gap-2 py-2">
-              <h2 className="text-sm sm:text-medium  lg:text-xl font-medium tracking-wide">
+              <h2 className="text-sm sm:text-medium  lg:text-xl font-medium ">
                 Date :
               </h2>
-              <p className="text-sm sm:text-medium  lg:text-xl tracking-wider">
+              <p className="text-sm sm:text-medium  lg:text-xl r">
                 January 16, 2025.
               </p>
             </div>
             <div className="flex items-center gap-2">
-              <h2 className="text-sm sm:text-medium  lg:text-xl font-medium tracking-wide">
+              <h2 className="text-sm sm:text-medium  lg:text-xl font-medium ">
                 Time to start :
               </h2>
-              <p className="text-sm sm:text-medium  lg:text-xl tracking-wider">6 am.</p>
+              <p className="text-sm sm:text-medium  lg:text-xl r">6 am.</p>
             </div>
             <div className="flex items-center gap-2 py-2">
-              <h2 className="text-sm sm:text-medium  lg:text-xl font-medium tracking-wide">
+              <h2 className="text-sm sm:text-medium  lg:text-xl font-medium ">
                 Registration fees :
               </h2>
-              <p className="text-sm sm:text-medium  lg:text-xl tracking-wider">
-                Rs.100 Only.
+              <p className="text-sm sm:text-medium  lg:text-xl r">
+                Rs.100 <span className="text-sm font-semibold">(Other Disticts Only)</span>
               </p>
             </div>
             <div className="flex items-center gap-2">
-              <h2 className="text-sm sm:text-medium  lg:text-xl font-medium tracking-wide">
+              <h2 className="text-sm sm:text-medium  lg:text-xl font-medium ">
                 Distance :
               </h2>
-              <p className="text-sm sm:text-medium lg:text-xl tracking-wider">
+              <p className="text-sm sm:text-medium lg:text-xl r">
                 Boys (10 km) - Girls (5 km).
               </p>
             </div>
             <div className="flex items-center gap-2 py-2">
-              <h2 className="text-sm sm:text-medium  lg:text-xl font-medium tracking-wide">
+              <h2 className="text-sm sm:text-medium  lg:text-xl font-medium ">
                 Participants :
               </h2>
-              <p className="text-sm sm:text-medium  lg:text-xl tracking-wider">
+              <p className="text-sm sm:text-medium  lg:text-xl r">
                 All age groups.
               </p>
-            </div>
-            <div className="text-center">
-              <h2 className="text-sm sm:text-base lg:text-base tracking-wide py-1">Fees apply to other districts. No fees for Dindigul.</h2>
             </div>
           </section>
         </div>
@@ -114,44 +111,44 @@ export default Banner;
 //               className="w-2/3 h-auto p-5 rounded-lg bg-white shadow-lg text-gray-700 border-2 border-primary leading-relaxed"
 //               // style={{ textShadow: "2px 2px 4px rgba(0,0,0,0.7)" }}
 //             >
-//               <h2 className="lg:text-3xl text-xl font-bold tracking-wider uppercase text-secondary pb-3"style={{ textShadow: "2px 2px 2px rgba(248,249,240,0.7)" }}>
+//               <h2 className="lg:text-3xl text-xl font-bold r uppercase text-secondary pb-3"style={{ textShadow: "2px 2px 2px rgba(248,249,240,0.7)" }}>
 //                 Marathon Details
 //               </h2>
 //               <div className="flex items-center gap-2">
-//                 <h2 className="lg:text-xl text-medium font-medium tracking-wide">
+//                 <h2 className="lg:text-xl text-medium font-medium ">
 //                   Location :
 //                 </h2>
-//                 <p className="text-xl tracking-wider"> Vagarai, Palani - 624613.</p>
+//                 <p className="text-xl r"> Vagarai, Palani - 624613.</p>
 //               </div>
 //               <div className="flex items-center gap-2 py-2">
-//                 <h2 className="lg:text-xl text-medium font-medium tracking-wide">
+//                 <h2 className="lg:text-xl text-medium font-medium ">
 //                   Date :
 //                 </h2>
-//                 <p className="text-xl tracking-wider"> January 16, 2025.</p>
+//                 <p className="text-xl r"> January 16, 2025.</p>
 //               </div>
 //               <div className="flex items-center gap-2">
-//                 <h2 className="lg:text-xl text-medium font-medium tracking-wide">
+//                 <h2 className="lg:text-xl text-medium font-medium ">
 //                   Time to start :
 //                 </h2>
-//                 <p className="text-xl tracking-wider"> 6 am.</p>
+//                 <p className="text-xl r"> 6 am.</p>
 //               </div>
 //               <div className="flex items-center gap-2 py-2">
-//                 <h2 className="lg:text-xl text-medium font-medium tracking-wide">
+//                 <h2 className="lg:text-xl text-medium font-medium ">
 //                  Registration fees :
 //                 </h2>
-//                 <p className="text-xl tracking-wider">Rs.100 Only.</p>
+//                 <p className="text-xl r">Rs.100 Only.</p>
 //               </div>
 //               <div className="flex items-center gap-2 ">
-//                 <h2 className="lg:text-xl text-medium font-medium tracking-wide">
+//                 <h2 className="lg:text-xl text-medium font-medium ">
 //                 Distance :
 //                 </h2>
-//                 <p className="text-xl tracking-wider">Boys (10 km) - Girls (5 km).</p>
+//                 <p className="text-xl r">Boys (10 km) - Girls (5 km).</p>
 //               </div>
 //               <div className="flex items-center gap-2 py-2">
-//                 <h2 className="lg:text-xl text-medium font-medium tracking-wide">
+//                 <h2 className="lg:text-xl text-medium font-medium ">
 //                 Participants :
 //                 </h2>
-//                 <p className="text-xl tracking-wider">All age group allowed.</p>
+//                 <p className="text-xl r">All age group allowed.</p>
 //               </div>
 //             </section>
 //           </p>

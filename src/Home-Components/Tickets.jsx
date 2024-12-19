@@ -18,7 +18,7 @@ const Tickets = () => {
         <div className="w-full lg:h-[500px] flex lg:flex-row flex-col items-center justify-center lg:gap-10 gap-5 lg:px-10 px-5">
           {/* Ticket 1 */}
 
-          <div className="flex flex-col items-center justify-center hover:scale-[1.05] transform transition-all duration-500 ">
+          <div className="flex flex-col items-center justify-center sm:hover:scale-[1.03] transform transition-all duration-500 ">
             <div className="border-[1px] hover:border-2 border-green-300 text-center shadow-xl hover:shadow-2xl w-[300px] sm:w-[350px] lg:h-[400px] h-[350px] rounded-lg lg:py-10 ">
               <h2
                 className="lg:text-4xl text-2xl font-extrabold tracking-wider lg:px-10 lg:py-7 px-5 py-4  bg-gradient-to-r from-orange-400 via-red-400 to-pink-400 text-white lg:my-5 my-10 text-center"
@@ -28,10 +28,6 @@ const Tickets = () => {
               </h2>
               <p className="tracking-wider">
                 <ul className="lg:text-lg font-medium text-gray-600  tracking-wider gap-2 flex flex-col justify-center items-center lg:py-5 py-0 lg:px-10 px-5">
-                  <li className="flex items-center gap-2">
-                    <GiCheckMark className="text-lg text-orange-400 font-bold" />
-                    Coffee & Tea
-                  </li>
                   <li className="flex items-center gap-2">
                     <GiCheckMark className="text-lg text-orange-400 font-bold" />
                     Refreshments
@@ -54,7 +50,7 @@ const Tickets = () => {
 
           {/* Ticket 2 */}
 
-          <div className="flex flex-col items-center justify-center hover:scale-[1.05] transform transition-all duration-500">
+          <div className="flex flex-col items-center justify-center sm:hover:scale-[1.03] transform transition-all duration-500">
             <div className="border-[1px] hover:border-2 border-red-300 text-center  shadow-xl hover:shadow-2xl w-[300px] sm:w-[350px] lg:h-[450px] h-[360px] rounded-lg lg:py-8">
               <h1
                 className="lg:text-2xl text-xl  font-extrabold text-primary tracking-wider uppercase pt-3 lg:pt-0"
@@ -70,7 +66,7 @@ const Tickets = () => {
                   Rs.100
                 </h2>
                 <h2 className="lg:text-lg font-medium text-gray-600 px-5 py-3">
-                  The same registration fees apply to both boys and girls.{" "}
+                  The registration fees apply only other disticts.
                 </h2>
                 <h2 className="lg:text-base font-medium text-gray-600 px-5 py-3">
                   All participants will receive finisher’s medals, and winners
@@ -84,7 +80,7 @@ const Tickets = () => {
           </div>
 
           {/* Ticket 3 */}
-          <div className=" flex flex-col items-center justify-center hover:scale-[1.05] transform transition-all duration-500">
+          <div className=" flex flex-col items-center justify-center sm:hover:scale-[1.03] transform transition-all duration-500">
             <div className="border-[1px] hover:border-2 border-blue-300 text-center  shadow-xl hover:shadow-2xl  w-[300px] sm:w-[350px] lg:h-[400px] h-[350px] rounded-lg lg:py-10">
               <h2
                 className="lg:text-4xl text-2xl font-extrabold tracking-wider lg:px-10 px-5 py-4 lg:py-7 bg-gradient-to-r from-orange-400 via-red-400 to-pink-400 text-white lg:my-5 my-10 text-center"
@@ -101,10 +97,6 @@ const Tickets = () => {
                   <li className="flex items-center gap-2">
                     <GiCheckMark className="text-lg text-orange-400 font-bold" />
                     Medals
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <GiCheckMark className="text-lg text-orange-400 font-bold" />
-                    Winning price amount
                   </li>
                   <li className="flex items-center gap-2">
                     <GiCheckMark className="text-lg text-orange-400 font-bold" />

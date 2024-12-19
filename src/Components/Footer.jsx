@@ -35,7 +35,7 @@ function Footer() {
                 color: "transparent",
               }}
             >
-              Vagarai Pasumai Marathon
+              Vagarai Green Marathon
             </h2>
             <p className="text-center text-sm tracking-wider py-2">
               Vagarai(B.O),Palani(Tk),Dindugal-624613.
@@ -50,7 +50,7 @@ function Footer() {
               <span className="text-cyan-400 ">
                 &copy; {new Date().getFullYear()}{" "}
               </span>
-              Vagarai Pasumai Marathon. All rights reserved.
+              Vagarai Green Marathon. All rights reserved.
             </p>
           </div>
         </div>
