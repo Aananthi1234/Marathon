@@ -14,7 +14,7 @@ const Topbar = () => {
 
                         {/* Left Side: Address and Email */}
                         <div className="  flex justify-center items-center md:gap-8 lg:gap-10 gap-5">
-                            <div className=" flex items-center gap-1 text-white">
+                            <div className=" hidden sm:flex items-center gap-1 text-white">
                                 <MdLocationPin className="text-yellow-400 w-4 h-4 rounded-full " />
                                 <a href="#" className="text-white font-medium tracking-wider text-base">
                                     Vagarai - 624613
@@ -23,12 +23,12 @@ const Topbar = () => {
                             <div className=" hidden lg:flex items-center gap-1 hover:text-white">
                                 <IoMdMail className="text-yellow-400 w-4 h-4 rounded-full " />
                                 <a href="#" className="hover:underline font-medium underline-offset-4  text-base text-white tracking-wider">
-                                    kprabu1333@gmail.com
+                                    vagaraigreenmarathon2025@gmail.com
                                 </a>
                             </div>
                             <div className="flex items-center gap-1 hover:text-white">
                                 <FaSquarePhone className="text-yellow-400 w-4 h-4 rounded-full " />
-                                <p className="text-white  tracking-widest font-medium text-base">8248334301</p>
+                                <p className="text-white  tracking-widest font-medium text-xs sm:text-base">9751419303, 8248334301</p>
                             </div>
                         </div>
                     </div>

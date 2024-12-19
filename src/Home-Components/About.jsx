@@ -25,9 +25,9 @@ const About = () => {
       </div>
 
       {/* Right Box Container */}
-      <div className="w-full lg:w-1/2 am:min-h-[400px] md:min-h-[600px] lg:min-h-[600px] px-3 flex flex-col justify-center lg:text-left text-center  ">
+      <div className="w-full lg:w-1/2 am:min-h-[400px] md:min-h-[600px] lg:min-h-[600px] sm:px-3 flex flex-col justify-center lg:text-left text-center  ">
         <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-primary tracking-wide uppercase lg:text-left text-center">
-          Vagarai Mega <span className="text-secondary">Marathon</span>
+         <span className='md:text-3xl'> Vagarai</span> <br /> <span className="text-secondary text-2xl md:text-3xl">Green Marathon</span>
         </h2>
         <p className="text-base sm:text-lg lg:text-xl font-medium text-gray-700 tracking-wide py-3 lg:py-5 leading-relaxed text-justify">
           Join us for the Mega Marathon in Vagarai, Palani District on January 16, 2025! A celebration of community,
@@ -40,7 +40,7 @@ const About = () => {
           participants of all levels. Together, let's make strides towards a healthier lifestyle!
         </p>
         <button className="px-6 sm:px-10 lg:px-20 py-2 my-5 border-2 border-primary font-semibold bg-primary hover:bg-transparent hover:text-primary duration-500 transition-all text-white tracking-wide rounded-xl shadow-lg">
-          BOOK NOW
+          REGISTER NOW
         </button>
       </div>
     </div>

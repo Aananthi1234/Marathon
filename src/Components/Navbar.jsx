@@ -19,8 +19,8 @@ const Navbar = () => {
                                 alt="Logo"
                                 className="w-[90px] lg:w-[130px]"
                             /> */}
-                            <h1 className="uppercase font-bold sm:text-2xl tracking-wider">Green 
-                                Marathon</h1>
+                            <h1 className="uppercase font-bold text-sm sm:text-2xl tracking-wider">VAGARAI GREEN 
+                                MARATHON</h1>
                         </div>
                         <div className="hidden md:block  font-semibold tracking-wider">
                             <div className="ml-10 flex items-baseline space-x-8">

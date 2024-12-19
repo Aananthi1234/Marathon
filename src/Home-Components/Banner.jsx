@@ -41,14 +41,14 @@ const Banner = () => {
                 Date :
               </h2>
               <p className="text-sm sm:text-medium  lg:text-xl r">
-                January 16, 2025.
+                January 15, 2025.
               </p>
             </div>
             <div className="flex items-center gap-2">
               <h2 className="text-sm sm:text-medium  lg:text-xl font-medium ">
                 Time to start :
               </h2>
-              <p className="text-sm sm:text-medium  lg:text-xl r">6 am.</p>
+              <p className="text-sm sm:text-medium  lg:text-xl r">6 AM.</p>
             </div>
             <div className="flex items-center gap-2 py-2">
               <h2 className="text-sm sm:text-medium  lg:text-xl font-medium ">

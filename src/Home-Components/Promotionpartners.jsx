@@ -5,20 +5,25 @@ import partner2 from "../assets/Propartners2.jpeg"
 import partner3 from "../assets/Propartners3.jpeg"
 import partner4 from "../assets/Propartners4.jpeg"
 import partner5 from "../assets/Propartners5.jpeg"
+import nammapalanikarthi from "../assets/nammapalanikarthi.jpeg"
+import odc from "../assets/odc.jpeg"
+// import partner6 from "../assets/Propartners5.jpeg"
 
 const PromotionPartners = () => {
   // Dummy data for promotion partners
   const partners = [
-    { id: 1, logo: "Partner1" ,img:partner1},
-    { id: 2, logo: "Partner2" ,img:partner2},
-    { id: 3, logo: "Partner3" ,img:partner3},
-    { id: 4, logo: "Partner4" ,img:partner4},
-    { id: 5, logo: "Partner5" ,img:partner5},
+    { id: 1, logo: "karthi" ,img:nammapalanikarthi},
+    { id: 2, logo: "indira" ,img:partner5},
+    { id: 3, logo: "kattanchaya" ,img:partner3},
+    { id: 4, logo: "palaniofficial" ,img:partner4},
+    { id: 5, logo: "Partner2" ,img:partner2},
+    { id: 6, logo: "Partner6" ,img:partner1},
+    { id: 7, logo: "odc" ,img:odc},
    
   ];
 
   return (
-    <div className="">
+    <div className="w-full pt-5">
       <div className="container mx-auto px-4">
       <h2
         className="w-full lg:text-4xl text-2xl font-bold text-center tracking-wide lg:mb-10 py-5 bg-gradient-to-r from-orange-400 via-red-400 to-pink-400"
@@ -48,9 +53,9 @@ const PromotionPartners = () => {
           ))}
         </div>
        
-    <div className="md:w-full  flex justify-center items-center py-10 overflow-hidden">
+    <div className="md:w-full  flex justify-center items-center py-6 overflow-hidden">
       {/* Outer container for clipping */}
-      <div className="w-full relative bg-green-600 text-white py-8 rounded-xl shadow-md">
+      <div className="w-full relative bg-green-800 text-white py-4 rounded-xl shadow-md">
         {/* Inner container with sliding animation */}
         <div className="flex w-full justify-center items-center whitespace-nowrap animate-slide">
           <h1 className="lg:text-3xl text-xl tracking-wide px-10">

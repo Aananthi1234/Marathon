@@ -2,17 +2,20 @@ import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import lion from "../assets/lion.jpeg"
 import olir from "../assets/olir.png";
 import sasi from "../assets/sasi.jpeg";
 import core from "../assets/core.jpeg";
-import avis from "../assets/avis.png";
+import avis from "../assets/avis.jpeg";
 import sds from "../assets/sdslogo.png";
 import dayu from "../assets/DayuMart.png";
 import magic from "../assets/magic.jpeg";
+import PromotionPartners from "./Promotionpartners";
 
 const SponsorsSlider = () => {
   // Sponsor data
   const sponsors = [
+    { img: lion, name: "Lions Club" },
     { img: olir, name: "Olir Media Zone" },
     { img: sasi, name: "SasiKumar Edits" },
     { img: core, name: "Olir Media Core" },
@@ -57,7 +60,7 @@ const SponsorsSlider = () => {
   };
 
   return (
-    <div className="bg-white lg:my-5 my-10 lg:py-10 px-5 w-full lg:w-[90%] h-auto flex flex-col justify-center items-center overflow-hidden rounded-md">
+    <div className="bg-white lg:my-5 my-10 lg:py-10 px-5 w-full lg:w-[95%] h-auto flex flex-col justify-center items-center overflow-hidden rounded-md">
       {/* Title */}
       <h2
         className="w-full lg:text-4xl text-2xl font-bold text-center tracking-wide lg:mb-10 py-5 bg-gradient-to-r from-orange-400 via-red-400 to-pink-400"
@@ -94,6 +97,7 @@ const SponsorsSlider = () => {
           ))}
         </Slider>
       </div>
+      <PromotionPartners/>
     </div>
   );
 };

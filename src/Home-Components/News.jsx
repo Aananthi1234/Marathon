@@ -98,7 +98,7 @@ const NewsSlider = () => {
       >
         News Highlights
       </h2>
-      <div className="w-full max-w-screen-xl relative px-2 sm:px-5">
+      <div className="w-full max-w-screen-xl relative px-2 sm:px-5 mb-4">
         <Slider {...settings}>
           {news.map((item, index) => (
             <div
