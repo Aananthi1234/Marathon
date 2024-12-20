@@ -53,25 +53,6 @@ const PromotionPartners = () => {
           ))}
         </div>
 
-        <div className="w-full flex justify-center items-center py-4 overflow-hidden">
-          {/* Outer container for clipping */}
-          <div className="w-full relative bg-green-800 text-white py-2 rounded shadow-md">
-            {/* Inner container with sliding animation */}
-            <div className="flex w-full justify-center items-center whitespace-nowrap animate-slide">
-              <h1 className="lg:text-3xl text-base sm:text-xl tracking-wide px-4 sm:px-10">
-                Registration starts from Saturday - ( 21.12.2024 )
-              </h1>
-              <h1 className="lg:text-3xl text-base sm:text-xl tracking-wide px-4 sm:px-10">
-                Registration starts from Saturday - ( 21.12.2024 )
-              </h1>
-              <h1 className="lg:text-3xl text-base sm:text-xl tracking-wide px-4 sm:px-10">
-                Registration starts from Saturday - ( 21.12.2024 )
-              </h1>
-            </div>
-          </div>
-        </div>
-
-
       </div>
 
     </div>

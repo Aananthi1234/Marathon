@@ -19,7 +19,7 @@ const SponsorsGallery = () => {
   ];
 
   return (
-    <div className="bg-gradient-to-br from-gray-100 to-gray-200 py-10 w-full h-auto flex flex-col justify-center items-center">
+    <div className="bg-gradient-to-br from-gray-100 to-gray-200 py-6 sm:py-10 w-full h-auto flex flex-col justify-center items-center">
       {/* <h2
         className="w-full text-2xl sm:text-3xl lg:text-5xl font-bold text-center tracking-wide text-orange-500 py-5"
         style={{
@@ -31,11 +31,11 @@ const SponsorsGallery = () => {
       >
         
       </h2> */}
-      <div className="w-full max-w-screen-xl px-5 sm:px-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+      <div className="w-full max-w-screen-xl px-4 sm:px-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-5">
         {sponsors.map((sponsor, index) => (
           <div
             key={index}
-            className="flex flex-col items-center justify-center bg-white p-3 rounded-lg shadow-md hover:shadow-lg hover:scale-[1.05] transform transition-all duration-500"
+            className="flex flex-col items-center justify-center bg-white p-1 sm:p-3 rounded-lg shadow-md hover:shadow-lg hover:scale-[1.05] transform transition-all duration-500"
           >
             <img
               src={sponsor.img}

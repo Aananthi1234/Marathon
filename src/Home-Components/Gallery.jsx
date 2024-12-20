@@ -32,8 +32,8 @@ const Gallery = () => {
   return (
     <>
       <div className="w-full h-auto container mx-auto p-4">
-        <div className="flex justify-start items-center border-b-2 border-b-red-400 rounded-l-lg border-opacity-75 gap-4 ">
-          <h2 className="lg:w-16 lg:h-16  bg-gradient-to-r from-orange-400 via-red-400 to-pink-400 rounded-s-lg"></h2>
+        <div className="flex justify-start items-center border-b-2 border-b-red-400 rounded-l-lg border-opacity-75 gap-4 mb-3">
+          <h2 className="lg:w-16 lg:h-16 bg-gradient-to-r from-orange-400 via-red-400 to-pink-400 rounded-s-lg"></h2>
           <h2
             className="lg:text-4xl text-xl p-1 font-bold tracking-wide bg-gradient-to-r from-orange-400 via-red-400 to-pink-400"
             style={{
@@ -44,7 +44,7 @@ const Gallery = () => {
           >
             Medals & Certificates
           </h2>
-          <div className="w-full flex  justify-end items-end bg-white opacity-75 lg:px-20 gap-5">
+          <div className="w-full flex justify-end items-end bg-white opacity-75 lg:px-20 gap-5">
             <img
               src={marathon}
               alt=""
@@ -52,13 +52,13 @@ const Gallery = () => {
             />
           </div>
         </div>
-        <div className="grid lg:grid-cols-3 md:grid-cols-3 grid-cols-2 gap-5 lg:pt-10  ">
+        <div className="grid lg:grid-cols-3 md:grid-cols-3 grid-cols-2 gap-3 sm:gap-5 lg:pt-10  ">
           {images.map((image, index) => (
             <div key={index} className="w-full h-auto rounded-lg">
               <img
                 src={image}
                 alt={`Gallery Image ${index + 1}`}
-                className="w-full lg:h-60 h-40 object-cover p-2 rounded-lg shadow-lg border-[1px] border-orange-500 transition-transform duration-500 ease-in-out hover:scale-105 hover:shadow-xl hover:border-red-500"
+                className="w-full lg:h-60 h-40 object-cover p-1 sm:p-2 rounded-md shadow-lg border-[1px] border-orange-500 transition-transform duration-500 ease-in-out hover:scale-105 hover:shadow-xl hover:border-red-500"
               />
             </div>
           ))}

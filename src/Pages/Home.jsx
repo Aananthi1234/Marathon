@@ -22,6 +22,7 @@ const Home = () => {
       className="w-full h-[500%] flex flex-col justify-center items-center " data-aos="fade-up">
       <Hero/>
       <Sponser/>
+      <News/>
       {/* <PromotionPartners/> */}
       <About/>
       <Banner/>
@@ -29,7 +30,7 @@ const Home = () => {
       <Cup/> 
       <Gallery/>
       <Media/>
-      <News/>
+      
       
     </div>
   );

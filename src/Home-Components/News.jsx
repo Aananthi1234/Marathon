@@ -14,7 +14,7 @@ import news9 from "../assets/News/news9.jpeg";
 
 const NextArrow = ({ onClick }) => (
   <div
-    className="absolute right-[-10px] md:right-[-20px] top-1/2 transform -translate-y-1/2 z-10 cursor-pointer bg-blue-500 hover:bg-blue-600 text-white p-2 md:p-3 rounded-full shadow-lg transition duration-300"
+    className="hidden sm:block absolute right-[-10px] md:right-[-20px] top-1/2 transform -translate-y-1/2 z-10 cursor-pointer bg-blue-500 hover:bg-blue-600 text-white p-2 md:p-3 rounded-full shadow-lg transition duration-300"
     onClick={onClick}
   >
     <svg
@@ -31,7 +31,7 @@ const NextArrow = ({ onClick }) => (
 
 const PrevArrow = ({ onClick }) => (
   <div
-    className="absolute left-[-10px] md:left-[-20px] top-1/2 transform -translate-y-1/2 z-10 cursor-pointer bg-blue-500 hover:bg-blue-600 text-white p-2 md:p-3 rounded-full shadow-lg transition duration-300"
+    className="hidden sm:block absolute left-[-10px] md:left-[-20px] top-1/2 transform -translate-y-1/2 z-10 cursor-pointer bg-blue-500 hover:bg-blue-600 text-white p-2 md:p-3 rounded-full shadow-lg transition duration-300"
     onClick={onClick}
   >
     <svg
@@ -86,38 +86,58 @@ const NewsSlider = () => {
   ];
 
   return (
-    <div className="md:py-16 py-5 w-full h-auto flex flex-col justify-center items-center overflow-hidden">
-     <h2
-        className="w-full text-2xl sm:text-3xl lg:text-5xl font-bold text-center tracking-wide text-orange-500 py-5"
-        style={{
-          WebkitBackgroundClip: "text",
-          backgroundClip: "text",
-          color: "transparent",
-          backgroundImage: "linear-gradient(to right, #f97316, #ec4899)",
-        }}
-      >
-        News Highlights
-      </h2>
-      <div className="w-full max-w-screen-xl relative px-2 sm:px-5 mb-4">
-        <Slider {...settings}>
-          {news.map((item, index) => (
-            <div
-              key={index}
-              className="flex flex-col items-center justify-center text-center bg-white p-3 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300"
-            >
-              <img
-                src={item.img}
-                alt={item.title}
-                className="w-full h-52 sm:h-60 md:h-72 lg:h-90 object-cover rounded-md border-2 border-blue-300"
-              />
-              {/* <h3 className="mt-3 text-sm sm:text-lg md:text-xl font-semibold text-blue-700">
+    <>
+      <div className="md:py-16 sm:py-5 w-full px-4 h-auto flex flex-col justify-center items-center overflow-hidden">
+        <h2
+          className="w-full text-xl sm:text-3xl lg:text-5xl font-bold text-center tracking-wide text-orange-500 py-5 uppercase"
+          style={{
+            WebkitBackgroundClip: "text",
+            backgroundClip: "text",
+            color: "transparent",
+            backgroundImage: "linear-gradient(to right, #f97316, #ec4899)",
+          }}
+        >
+          News Highlights
+        </h2>
+        <div className="w-full max-w-screen-xl relative px-2 sm:px-5 mb-4">
+          <Slider {...settings}>
+            {news.map((item, index) => (
+              <div
+                key={index}
+                className="flex flex-col items-center justify-center text-center bg-white sm:p-3 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300"
+              >
+                <img
+                  src={item.img}
+                  alt={item.title}
+                  className="w-full h-52 sm:h-60 md:h-72 lg:h-90 object-cover rounded-md border-2 border-blue-300"
+                />
+                {/* <h3 className="mt-3 text-sm sm:text-lg md:text-xl font-semibold text-blue-700">
                 {item.title}
               </h3> */}
-            </div>
-          ))}
-        </Slider>
+              </div>
+            ))}
+          </Slider>
+        </div>
+
       </div>
-    </div>
+
+      <div className="w-full flex justify-center items-center sm:mt-10 py-4 overflow-hidden">
+        {/* Outer container for clipping */}
+        <div className="w-full relative bg-green-800 text-white py-2 shadow-md">
+          {/* Inner container with sliding animation */}
+          <div className="flex w-full justify-center items-center whitespace-nowrap animate-slide">
+            <h1 className="lg:text-3xl text-base sm:text-xl tracking-wide px-4 sm:px-10">
+              Registration starts from Saturday - ( 21.12.2024 )
+            </h1>
+            <h1 className="lg:text-3xl text-base sm:text-xl tracking-wide px-4 sm:px-10">
+              Registration starts from Saturday - ( 21.12.2024 )
+            </h1>
+            <h1 className="lg:text-3xl text-base sm:text-xl tracking-wide px-4 sm:px-10">
+              Registration starts from Saturday - ( 21.12.2024 )
+            </h1>
+          </div>
+        </div>
+      </div></>
   );
 };
 
