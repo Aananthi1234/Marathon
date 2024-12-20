@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react';
 import { BrowserRouter, Routes, Route } from "react-router-dom"
 import Layout from "./Layout"
 import Home from "./Pages/Home"
-import Contact from "./Pages/Contact"
 
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -34,7 +33,6 @@ function App() {
         <Routes>
           <Route element={<Layout />}>
             <Route path="/" element={<Home />} />
-            <Route path="/contact" element={<Contact />} />
           </Route>
         </Routes>
       </BrowserRouter>
