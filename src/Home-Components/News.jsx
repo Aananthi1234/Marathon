@@ -126,14 +126,14 @@ const NewsSlider = () => {
         <div className="w-full relative bg-green-800 text-white py-2 shadow-md">
           {/* Inner container with sliding animation */}
           <div className="flex w-full justify-center items-center whitespace-nowrap animate-slide">
-            <h1 className="lg:text-3xl text-base sm:text-xl tracking-wide px-4 sm:px-10">
-              Registration starts from Saturday - ( 21.12.2024 )
+            <h1 className="lg:text-2xl text-base sm:text-xl tracking-wide px-4 sm:px-10">
+              Registration Ends at - ( 10.01.2025 )
             </h1>
-            <h1 className="lg:text-3xl text-base sm:text-xl tracking-wide px-4 sm:px-10">
-              Registration starts from Saturday - ( 21.12.2024 )
+            <h1 className="lg:text-2xl text-base sm:text-xl tracking-wide px-4 sm:px-10">
+              Registration Ends at - ( 10.01.2025 )
             </h1>
-            <h1 className="lg:text-3xl text-base sm:text-xl tracking-wide px-4 sm:px-10">
-              Registration starts from Saturday - ( 21.12.2024 )
+            <h1 className="lg:text-2xl text-base sm:text-xl tracking-wide px-4 sm:px-10">
+              Registration Ends at - ( 10.01.2025 )
             </h1>
           </div>
         </div>

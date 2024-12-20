@@ -7,18 +7,22 @@ import partner5 from "../assets/Propartners5.jpeg"
 import nammapalanikarthi from "../assets/nammapalanikarthi.jpeg"
 import odc from "../assets/odc.jpeg"
 import vikram from "../assets/vikram.jpeg"
+import rams from "../assets/ram.jpeg"
+import promotionhub from "../assets/promotionhub.jpeg"
 
 const PromotionPartners = () => {
   // Dummy data for promotion partners
   const partners = [
-    { id: 1, logo: "karthi", img: nammapalanikarthi },
-    { id: 2, logo: "indira", img: partner5 },
-    { id: 3, logo: "vikram", img: vikram },
-    { id: 4, logo: "kattanchaya", img: partner3 },
-    { id: 5, logo: "palaniofficial", img: partner4 },
-    { id: 6, logo: "Partner2", img: partner2 },
-    { id: 7, logo: "Partner6", img: partner1 },
-    { id: 8, logo: "odc", img: odc },
+    { id: 1, logo: "rams", img: rams },
+    { id: 2, logo: "karthi", img: nammapalanikarthi },
+    { id: 3, logo: "indira", img: partner5 },
+    { id: 4, logo: "vikram", img: vikram },
+    { id: 5, logo: "kattanchaya", img: partner3 },
+    { id: 6, logo: "promotionhub", img: promotionhub },
+    { id: 7, logo: "palaniofficial", img: partner4 },
+    { id: 8, logo: "Partner2", img: partner2 },
+    { id: 9, logo: "Partner6", img: partner1 },
+    { id: 10, logo: "odc", img: odc },
 
   ];
 

@@ -37,7 +37,7 @@ function Footer() {
                 href="mailto:vagaraigreenmarathon2025@gmail.com"
                 className="hover:underline text-xs sm:text-base"
               >
-                vagaraigreenmarathon2025@gmail.com
+                vagaraimarathon@gmail.com
               </a>
             </div>
             <div className="flex items-center justify-center md:justify-start gap-2">
