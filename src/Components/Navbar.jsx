@@ -17,7 +17,7 @@ const Navbar = () => {
             </div>
 
             <div>
-                <button className="bg-green-700 text-white px-4 sm:px-8 py-1 sm:py-2 font-bold rounded-md text-sm sm:text-lg hover:bg-green-600">
+                <button className="bg-green-700 text-white px-4 sm:px-10 py-1 sm:py-2 font-bold rounded-md text-sm sm:text-lg hover:bg-green-600">
                     Register
                 </button>
             </div>

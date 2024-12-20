@@ -1,5 +1,4 @@
 import React from "react";
-
 import partner1 from "../assets/Propartners1.jpeg"
 import partner2 from "../assets/Propartners2.jpeg"
 import partner3 from "../assets/Propartners3.jpeg"
@@ -7,18 +6,19 @@ import partner4 from "../assets/Propartners4.jpeg"
 import partner5 from "../assets/Propartners5.jpeg"
 import nammapalanikarthi from "../assets/nammapalanikarthi.jpeg"
 import odc from "../assets/odc.jpeg"
-// import partner6 from "../assets/Propartners5.jpeg"
+import vikram from "../assets/vikram.jpeg"
 
 const PromotionPartners = () => {
   // Dummy data for promotion partners
   const partners = [
     { id: 1, logo: "karthi", img: nammapalanikarthi },
     { id: 2, logo: "indira", img: partner5 },
-    { id: 3, logo: "kattanchaya", img: partner3 },
-    { id: 4, logo: "palaniofficial", img: partner4 },
-    { id: 5, logo: "Partner2", img: partner2 },
-    { id: 6, logo: "Partner6", img: partner1 },
-    { id: 7, logo: "odc", img: odc },
+    { id: 3, logo: "vikram", img: vikram },
+    { id: 4, logo: "kattanchaya", img: partner3 },
+    { id: 5, logo: "palaniofficial", img: partner4 },
+    { id: 6, logo: "Partner2", img: partner2 },
+    { id: 7, logo: "Partner6", img: partner1 },
+    { id: 8, logo: "odc", img: odc },
 
   ];
 
