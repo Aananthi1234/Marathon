@@ -4,7 +4,7 @@ import mega from "../assets/mega.jpg";
 
 const About = () => {
   return (
-    <div className="w-full flex flex-col lg:flex-row justify-center items-center mb-8 lg:my-16 lg:py-5 lg:px-20 px-6 gap-10 lg:gap-20">
+    <div className="w-full flex flex-col lg:flex-row justify-center items-center sm:mb-8 lg:my-16 lg:py-5 lg:px-20 px-6 gap-4 sm:gap-10 lg:gap-20">
       {/* Left Box Container */}
       <div className="w-full lg:w-1/2 relative h-[300px] md:min-h-[600px] lg:h-[600px] text-center flex justify-center items-center ">
         {/* Box 1 */}
@@ -29,7 +29,7 @@ const About = () => {
         <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-primary tracking-wide uppercase lg:text-left text-center">
          <span className='md:text-3xl'> Vagarai</span> <br /> <span className="text-secondary text-2xl md:text-3xl">Green Marathon</span>
         </h2>
-        <p className="text-base sm:text-lg lg:text-xl font-medium text-gray-700 tracking-wide py-3 lg:py-5 leading-relaxed text-justify">
+        <p className="text-base sm:text-lg lg:text-xl font-medium text-gray-700 tracking-wide py-2 sm:py-3 lg:py-5 leading-relaxed text-justify">
           Join us for the Mega Marathon in Vagarai, Palani District on January 16, 2025! A celebration of community,
           health, and the joy of running! We invite participants of all ages and skill levels to experience the scenic
           beauty of our village while promoting fitness and camaraderie.
@@ -39,7 +39,7 @@ const About = () => {
           spirit. Whether you're an experienced marathoner or a first-time runner, our event is designed for
           participants of all levels. Together, let's make strides towards a healthier lifestyle!
         </p>
-        <button className="px-6 sm:px-10 lg:px-20 py-2 my-5 border-2 border-primary font-semibold bg-primary hover:bg-transparent hover:text-primary duration-500 transition-all text-white tracking-wide rounded-xl shadow-lg">
+        <button className="px-6 sm:px-10 lg:px-20 py-2 my-2 sm:my-5 border-2 border-primary font-semibold bg-primary hover:bg-transparent hover:text-primary duration-500 transition-all text-white tracking-wide rounded-xl shadow-lg">
           REGISTER NOW
         </button>
       </div>

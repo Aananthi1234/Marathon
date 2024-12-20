@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import vagaraimarathon from "../assets/BannerNew.png";
+import vagaraimarathon from "../assets/BannerNew.jpg";
 
 
 const Hero = () => {

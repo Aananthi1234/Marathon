@@ -32,27 +32,27 @@ const SponsorsSlider = () => {
     speed: 1000,
     autoplay: true,
     autoplaySpeed: 2000,
-    slidesToShow: 4,
+    slidesToShow: 6,
     slidesToScroll: 1,
     responsive: [
       {
         breakpoint: 1024,
         settings: {
-          slidesToShow: 3,
+          slidesToShow: 4,
           slidesToScroll: 1,
         },
       },
       {
         breakpoint: 768,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 4,
           slidesToScroll: 1,
         },
       },
       {
         breakpoint: 480,
         settings: {
-          slidesToShow: 1,
+          slidesToShow: 3,
           slidesToScroll: 1,
         },
       },
@@ -60,10 +60,10 @@ const SponsorsSlider = () => {
   };
 
   return (
-    <div className="bg-white lg:my-5 my-10 lg:py-10 px-5 w-full lg:w-[95%] h-auto flex flex-col justify-center items-center overflow-hidden rounded-md">
+    <div className="bg-white lg:my-5 lg:py-10 px-4 w-full lg:w-[95%] h-auto flex flex-col justify-center items-center overflow-hidden rounded-md">
       {/* Title */}
       <h2
-        className="w-full lg:text-4xl text-2xl font-bold text-center tracking-wide lg:mb-10 py-5 bg-gradient-to-r from-orange-400 via-red-400 to-pink-400"
+        className="w-full lg:text-4xl text-xl sm:text-2xl font-bold text-center tracking-wide lg:mb-10 py-5 bg-gradient-to-r from-orange-400 via-red-400 to-pink-400 uppercase"
         style={{
           WebkitBackgroundClip: "text",
           backgroundClip: "text",
@@ -74,15 +74,15 @@ const SponsorsSlider = () => {
       </h2>
 
       {/* Slider */}
-      <div className="w-full max-w-screen-lg mx-auto ">
+      <div className="w-full mx-auto ">
         <Slider {...settings}>
           {sponsors.map((sponsor, index) => (
             <div
               key={index}
-              className="w-full h-full flex flex-col justify-center items-center text-center p-4  "
+              className="w-full h-full flex flex-col justify-center items-center text-center sm:p-4  "
             >
               {/* Image Wrapper */}
-              <div className="w-28 h-28 sm:w-32 sm:h-32 lg:w-36 lg:h-36 flex justify-center items-center rounded-full border-[1px] border-green-700 shadow-lg transition-all duration-300 hover:scale-105 mx-auto">
+              <div className="w-16 h-16 sm:w-24 sm:h-24 lg:w-32 lg:h-32 flex justify-center items-center rounded-full border-[1px] border-green-700 shadow-lg transition-all duration-300 hover:scale-105 mx-auto">
                 <img
                   src={sponsor.img}
                   alt={sponsor.name}
@@ -90,14 +90,14 @@ const SponsorsSlider = () => {
                 />
               </div>
               {/* Sponsor Name */}
-              <h3 className="text-xs sm:text-sm lg:text-sm font-semibold text-gray-600 text-center tracking-wider uppercase mt-3">
+              <h3 className="text-xs sm:text-sm lg:text-sm font-semibold text-gray-600 text-center mt-3">
                 {sponsor.name}
               </h3>
             </div>
           ))}
         </Slider>
       </div>
-      <PromotionPartners/>
+      <PromotionPartners />
     </div>
   );
 };
