@@ -10,6 +10,7 @@ import Sponser from "../Home-Components/Sponser"
 import Gallery from "../Home-Components/Gallery"
 import News from "../Home-Components/News"
 import PromotionPartners from "../Home-Components/Promotionpartners";
+import TermsAndConditions from "../Home-Components/TermsAndConditions ";
 
 const Home = () => {
   // Scroll to the top of the page when the component is mounted
@@ -25,6 +26,7 @@ const Home = () => {
       <News/>
       {/* <PromotionPartners/> */}
       <About/>
+
       <Banner/>
       <Tickets/>
       <Cup/> 

@@ -9,7 +9,7 @@ const Loading = () => {
       <FaSpinner className="text-blue-500 animate-spin" size={88} />
       <h2 className="text-2xl m-5 font-bold text-gray-900 transition-all duration-300 hover:text-blue-500 hover:scale-110 cursor-pointer"
         >
-          Loading</h2>
+          Welcome</h2>
     </div>
   );
 };

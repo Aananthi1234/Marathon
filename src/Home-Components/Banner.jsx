@@ -24,53 +24,55 @@ const Banner = () => {
           />
          <section className="w-[25%] h-auto border-2 border-secondary lg:block hidden"></section>
           {/* Right text section */}
-          <section className="w-full  lg:w-[100%] sm:p-5 p-3 rounded-lg bg-white shadow-lg text-gray-700 border-2 border-primary leading-relaxed">
-            <h2 className="text-sm sm:text-xl lg:text-3xl font-bold r uppercase text-secondary pb-3" style={{ textShadow: "2px 2px 2px rgba(248,249,240,0.7)" }}>
+          <section className="w-full  lg:w-[100%] sm:p-5 p-3 rounded-xl bg-white shadow-lg text-gray-700 border-2 border-primary leading-relaxed">
+            <h2 className="text-xl sm:text-xl lg:text-2xl text-center font-bold  uppercase text-secondary pb-3" style={{ textShadow: "2px 2px 2px rgba(248,249,240,0.7)" }}>
               Marathon Details
             </h2>
             <div className="flex items-center gap-2 ">
-              <h2 className="text-sm sm:text-medium lg:text-xl font-medium ">
-                Location :
+              <h2 className="text-sm sm:text-medium lg:text-lg font-medium ">
+                Location:
               </h2>
-              <p className="text-sm sm:text-medium  lg:text-xl r">
+              <p className="text-sm sm:text-medium  lg:text-lg ">
                 Vagarai, Palani - 624613.
               </p>
             </div>
             <div className="flex items-center gap-2 py-2">
-              <h2 className="text-sm sm:text-medium  lg:text-xl font-medium ">
-                Date :
+              <h2 className="text-sm sm:text-medium  lg:text-lg font-medium ">
+                Date:
               </h2>
-              <p className="text-sm sm:text-medium  lg:text-xl r">
+              <p className="text-sm sm:text-medium  lg:text-lg ">
                 January 15, 2025.
               </p>
             </div>
             <div className="flex items-center gap-2">
-              <h2 className="text-sm sm:text-medium  lg:text-xl font-medium ">
-                Time to start :
+              <h2 className="text-sm sm:text-medium  lg:text-lg font-medium ">
+                Time to start:
               </h2>
-              <p className="text-sm sm:text-medium  lg:text-xl r">6 AM.</p>
+              <p className="text-sm sm:text-medium  lg:text-lg ">6 AM.</p>
             </div>
             <div className="flex items-center gap-2 py-2">
-              <h2 className="text-sm sm:text-medium  lg:text-xl font-medium ">
-                Registration fees :
+              <h2 className="text-sm sm:text-medium  lg:text-lg font-medium ">
+                Registration fees:
               </h2>
-              <p className="text-sm sm:text-medium  lg:text-xl r">
+              <p className="text-sm sm:text-medium  lg:text-lg ">
                 Rs.100 <span className="text-sm font-semibold">(Other Disticts Only)</span>
               </p>
             </div>
+            <div className="text-sm text-center italic pb-2 text-blue-300 font-semibold">* Dindigul District Free</div>
+
             <div className="flex items-center gap-2">
-              <h2 className="text-sm sm:text-medium  lg:text-xl font-medium ">
-                Distance :
+              <h2 className="text-sm sm:text-medium  lg:text-lg font-medium ">
+                Distance:
               </h2>
-              <p className="text-sm sm:text-medium lg:text-xl r">
-                Boys (10 km) - Girls (5 km).
+              <p className="text-sm sm:text-medium lg:text-lg ">
+                Male (10 km) - Female (5 km).
               </p>
             </div>
             <div className="flex items-center gap-2 py-2">
-              <h2 className="text-sm sm:text-medium  lg:text-xl font-medium ">
-                Participants :
+              <h2 className="text-sm sm:text-medium  lg:text-lg font-medium ">
+                Participants:
               </h2>
-              <p className="text-sm sm:text-medium  lg:text-xl r">
+              <p className="text-sm sm:text-medium  lg:text-lg ">
                 All age groups.
               </p>
             </div>

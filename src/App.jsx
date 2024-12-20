@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { BrowserRouter, Routes, Route } from "react-router-dom"
 import Layout from "./Layout"
 import Home from "./Pages/Home"
+import TermsAndConditions from './Home-Components/TermsAndConditions ';
 
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -33,6 +34,7 @@ function App() {
         <Routes>
           <Route element={<Layout />}>
             <Route path="/" element={<Home />} />
+            <Route path="/terms" element={<TermsAndConditions />} />
           </Route>
         </Routes>
       </BrowserRouter>
