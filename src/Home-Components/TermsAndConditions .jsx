@@ -5,9 +5,7 @@ import AccordionDetails from '@mui/material/AccordionDetails';
 import Typography from '@mui/material/Typography';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import { Box } from "@mui/material";
-import Hero from './Hero';
 
-import vagaraimarathon from "../assets/vagaraimarathon.jpg";
 
 const TermsAndConditions = () => {
     const terms = [
