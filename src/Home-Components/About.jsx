@@ -57,11 +57,11 @@ const About = () => {
           healthier lifestyle!
         </p>
         <div className="flex flex-col justify-center gap-2 sm:flex-row sm:gap-4">
-          <h2 className="text-sm sm:text-base border p-2 rounded-md text-red-500">Registration Closed</h2>
+          <h2 className="w-full sm:w-auto py-2 px-4 sm:my-5 font-semibold bg-red-500 hover:bg-transparent hover:text-gray-300 duration-500 transition-all rounded-md text-white tracking-wide shadow-lg flex justify-center items-center text-sm sm:text-lg">Registration Closed</h2>
           <NavLink
             to="/terms"
             onClick={scrollToTop}
-            className="w-full sm:w-auto py-2 px-4 sm:my-5 font-semibold bg-gray-300 hover:bg-transparent hover:text-gray-300 duration-500 transition-all rounded-full text-gray-700 tracking-wide shadow-lg flex justify-center items-center text-sm sm:text-lg"
+            className="w-full sm:w-auto py-2 px-4 sm:my-5 font-semibold bg-gray-300 hover:bg-transparent hover:text-gray-300 duration-500 transition-all rounded-md text-gray-700 tracking-wide shadow-lg flex justify-center items-center text-sm sm:text-lg"
           >
             Terms & Conditions
           </NavLink>
