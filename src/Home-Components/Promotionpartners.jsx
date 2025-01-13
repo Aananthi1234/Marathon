@@ -13,7 +13,6 @@ import promotionhub from "../assets/promotionhub.jpeg"
 const PromotionPartners = () => {
   // Dummy data for promotion partners
   const partners = [
-    { id: 1, logo: "rams", img: rams },
     { id: 2, logo: "karthi", img: nammapalanikarthi },
     { id: 3, logo: "indira", img: partner5 },
     { id: 4, logo: "vikram", img: vikram },

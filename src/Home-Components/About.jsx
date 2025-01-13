@@ -41,7 +41,7 @@ const About = () => {
       {/* Right Box Container */}
       <div className="w-full lg:w-1/2 am:min-h-[400px] md:min-h-[600px] lg:min-h-[600px] sm:px-3 flex flex-col justify-center lg:text-left text-center  -mt-5 sm:mt-0">
         <h2 className="hidden sm:block text-2xl sm:text-3xl lg:text-4xl font-bold text-primary tracking-wide uppercase lg:text-left text-center">
-         <span className='md:text-3xl'> Vagarai</span> <br /> <span className="text-secondary text-2xl md:text-3xl">Green Marathon</span>
+          <span className='md:text-3xl'> Vagarai</span> <br /> <span className="text-secondary text-2xl md:text-3xl">Green Marathon</span>
         </h2>
         <p className="text-base sm:text-lg lg:text-xl font-medium text-gray-700 tracking-wide py-2 sm:py-3 lg:py-5 leading-relaxed text-justify">
           Join us for the Mega Marathon in Vagarai, Palani District on January
@@ -57,11 +57,7 @@ const About = () => {
           healthier lifestyle!
         </p>
         <div className="flex flex-col justify-center gap-2 sm:flex-row sm:gap-4">
-          <a href="https://forms.gle/emEx2N2AAssu6MHt9" target="_blank">
-            <button className="w-full sm:w-auto px-6 py-2  sm:my-5 border-2 border-primary font-semibold rounded-full bg-primary hover:bg-transparent hover:text-primary duration-500 transition-all text-white tracking-wide shadow-lg text-sm sm:text-lg">
-              Register Now
-            </button>
-          </a>
+          <h2 className="text-sm sm:text-base border p-2 rounded-md text-red-500">Registration Closed</h2>
           <NavLink
             to="/terms"
             onClick={scrollToTop}

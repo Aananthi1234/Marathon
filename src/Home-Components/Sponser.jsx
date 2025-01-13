@@ -2,7 +2,6 @@ import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import lion from "../assets/lion.jpeg"
 import olir from "../assets/olir.png";
 import sasi from "../assets/sasi.jpeg";
 import core from "../assets/core.jpeg";
@@ -15,7 +14,6 @@ import PromotionPartners from "./Promotionpartners";
 const SponsorsSlider = () => {
   // Sponsor data
   const sponsors = [
-    { img: lion, name: "Lions Club" },
     { img: olir, name: "Olir Media Zone" },
     { img: sasi, name: "SasiKumar Edits" },
     { img: core, name: "Olir Media Core" },

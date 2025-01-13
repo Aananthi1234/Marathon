@@ -123,17 +123,26 @@ const NewsSlider = () => {
 
       <div className="w-full flex justify-center items-center sm:mt-10 py-4 overflow-hidden">
         {/* Outer container for clipping */}
-        <div className="w-full relative bg-green-800 text-white py-2 shadow-md">
+        <div className="w-full relative bg-red-600 text-white py-2 shadow-md">
           {/* Inner container with sliding animation */}
           <div className="flex w-full justify-center items-center whitespace-nowrap animate-slide">
             <h1 className="lg:text-2xl text-base sm:text-xl tracking-wide px-4 sm:px-10">
-              Registration Ends at - ( 10.01.2025 )
+              Registration Closed
             </h1>
             <h1 className="lg:text-2xl text-base sm:text-xl tracking-wide px-4 sm:px-10">
-              Registration Ends at - ( 10.01.2025 )
+              Registration Closed
             </h1>
             <h1 className="lg:text-2xl text-base sm:text-xl tracking-wide px-4 sm:px-10">
-              Registration Ends at - ( 10.01.2025 )
+              Registration Closed
+            </h1>
+            <h1 className="lg:text-2xl text-base sm:text-xl tracking-wide px-4 sm:px-10">
+              Registration Closed
+            </h1>
+            <h1 className="lg:text-2xl text-base sm:text-xl tracking-wide px-4 sm:px-10">
+              Registration Closed
+            </h1>
+            <h1 className="lg:text-2xl text-base sm:text-xl tracking-wide px-4 sm:px-10">
+              Registration Closed
             </h1>
           </div>
         </div>
