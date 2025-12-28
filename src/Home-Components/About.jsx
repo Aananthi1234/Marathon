@@ -44,8 +44,8 @@ const About = () => {
           <span className='md:text-3xl'> Vagarai</span> <br /> <span className="text-secondary text-2xl md:text-3xl">Green Marathon</span>
         </h2>
         <p className="text-base sm:text-lg lg:text-xl font-medium text-gray-700 tracking-wide py-2 sm:py-3 lg:py-5 leading-relaxed text-justify">
-          Join us for the Mega Marathon in Vagarai, Palani District on January
-          15, 2025 A celebration of community, health, and the joy of running!
+          Join us for the Mega Marathon in Vagarai, Palani District on <span className="text-blue-600">January
+          15, 2026</span> A celebration of community, health, and the joy of running!
           We invite participants of all ages and skill levels to experience the
           scenic beauty of our village while promoting fitness and camaraderie.
         </p>
@@ -56,8 +56,13 @@ const About = () => {
           for participants of all levels. Together, let's make strides towards a
           healthier lifestyle!
         </p>
-        <div className="flex flex-col justify-center gap-2 sm:flex-row sm:gap-4">
-          <h2 className="w-full sm:w-auto py-2 px-4 sm:my-5 font-semibold bg-red-500 hover:bg-transparent hover:text-gray-300 duration-500 transition-all rounded-md text-white tracking-wide shadow-lg flex justify-center items-center text-sm sm:text-lg">Registration Closed</h2>
+        <div className="flex flex-col justify-center items-center gap-2 sm:flex-row sm:gap-4 mt-10">
+
+          <a href="https://forms.gle/emEx2N2AAssu6MHt9" target="_blank" className="w-full sm:w-auto">
+            <button className="bg-green-700 text-white px-4 sm:px-10 py-2 font-bold rounded-md text-sm sm:text-lg hover:bg-green-600 w-full sm:w-auto">
+              Register Now
+            </button>
+          </a>
           <NavLink
             to="/terms"
             onClick={scrollToTop}

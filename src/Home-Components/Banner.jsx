@@ -41,7 +41,7 @@ const Banner = () => {
                 Date:
               </h2>
               <p className="text-sm sm:text-medium  lg:text-lg ">
-                January 15, 2025.
+                January 15, 2026.
               </p>
             </div>
             <div className="flex items-center gap-2">
@@ -52,14 +52,13 @@ const Banner = () => {
             </div>
             <div className="flex items-center gap-2 py-2">
               <h2 className="text-sm sm:text-medium  lg:text-lg font-medium ">
-                Registration fees:
+                Candidates:
               </h2>
               <p className="text-sm sm:text-medium  lg:text-lg ">
-                Rs.100 <span className="text-sm font-semibold">(Other Disticts Only)</span>
+                Dindugul Distict Only 
               </p>
             </div>
-            <div className="text-sm text-center italic pb-2 text-blue-300 font-semibold">* Dindigul District Free</div>
-
+            
             <div className="flex items-center gap-2">
               <h2 className="text-sm sm:text-medium  lg:text-lg font-medium ">
                 Distance:
@@ -73,7 +72,7 @@ const Banner = () => {
                 Participants:
               </h2>
               <p className="text-sm sm:text-medium  lg:text-lg ">
-                All age groups.
+                All age groups
               </p>
             </div>
           </section>

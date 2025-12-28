@@ -43,9 +43,12 @@ const Tickets = () => {
                 </ul>
               </p>
             </div>
-            <button className="-translate-y-7 lg:px-20 px-10 lg:py-2 py-2 border-2 border-green-500 bg-green-500 text-white font-semibold hover:bg-green-400  duration-500 transform transition-all  tracking-wide rounded-full flex items-center justify-center gap-2">
-              BOOK NOW <FaArrowRightLong />
-            </button>
+            <a href="https://forms.gle/emEx2N2AAssu6MHt9">
+              <button className="-translate-y-7 lg:px-20 px-10 py-3 border-2 border-green-500 bg-green-500 text-white font-semibold hover:bg-green-400  duration-500 transform transition-all  tracking-wide rounded-full flex items-center justify-center gap-2">
+                BOOK NOW <FaArrowRightLong />
+              </button>
+            </a>
+
           </div>
 
           {/* Ticket 2 */}
@@ -54,7 +57,7 @@ const Tickets = () => {
             <div className="border-[1px] hover:border-2 border-red-300 text-center  shadow-xl hover:shadow-2xl w-[300px] sm:w-[350px] lg:h-[450px] h-[360px] rounded-lg lg:py-8">
               <h1
                 className="lg:text-2xl text-xl  font-extrabold text-primary tracking-wider uppercase pt-3 lg:pt-0"
-                // style={{ textShadow: "2px px 2px rgba(0,0,0,0.7)" }}
+              // style={{ textShadow: "2px px 2px rgba(0,0,0,0.7)" }}
               >
                 Registration Fees
               </h1>
@@ -63,10 +66,7 @@ const Tickets = () => {
                   className="lg:text-4xl sm:text-2xl text-xl font-extrabold tracking-wider lg:px-10 px-5 py-4 lg:py-7 bg-gradient-to-r from-orange-400 via-red-400 to-pink-400 text-white my-5 text-center"
                   style={{ textShadow: "2px 2px 4px rgba(0,0,0,0.7)" }}
                 >
-                  Rs.100
-                </h2>
-                <h2 className="lg:text-lg font-medium text-gray-600 px-5 py-3">
-                  The registration fees apply only other disticts.
+                  FREE
                 </h2>
                 <h2 className="lg:text-base font-medium text-gray-600 px-5 py-3">
                   All participants will receive finisher’s medals, and winners
@@ -74,9 +74,12 @@ const Tickets = () => {
                 </h2>
               </p>
             </div>
-            <button className="-translate-y-7 lg:px-20 px-10 lg:py-2 py-2 border-2 border-red-500 bg-red-500 text-white font-semibold hover:bg-red-400  duration-500 transform transition-all tracking-wide rounded-full flex items-center justify-center gap-2">
-              BOOK NOW <FaArrowRightLong />
-            </button>
+            <a href="https://forms.gle/emEx2N2AAssu6MHt9">
+              <button className="-translate-y-7 lg:px-20 px-10 py-3 border-2 border-red-500 bg-red-500 text-white font-semibold hover:bg-red-400  duration-500 transform transition-all tracking-wide rounded-full flex items-center justify-center gap-2">
+                BOOK NOW <FaArrowRightLong />
+              </button>
+            </a>
+
           </div>
 
           {/* Ticket 3 */}
@@ -105,13 +108,15 @@ const Tickets = () => {
                 </ul>
               </p>
             </div>
-            <button className="-translate-y-7 lg:px-20 px-10 lg:py-2 py-2 border-2 border-blue-500 bg-blue-500 text-white font-semibold hover:bg-blue-400 duration-500 transform transition-all  tracking-wide rounded-full flex items-center justify-center gap-2">
-              BOOK NOW <FaArrowRightLong />
-            </button>
+            <a href="https://forms.gle/emEx2N2AAssu6MHt9">
+              <button className="-translate-y-7 lg:px-20 px-10 py-3 border-2 border-blue-500 bg-blue-500 text-white font-semibold hover:bg-blue-400 duration-500 transform transition-all  tracking-wide rounded-full flex items-center justify-center gap-2">
+                BOOK NOW <FaArrowRightLong />
+              </button>
+            </a>
           </div>
         </div>
 
-       
+
       </div>
     </>
   );

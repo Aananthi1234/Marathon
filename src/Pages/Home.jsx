@@ -22,7 +22,7 @@ const Home = () => {
     <div
       className="w-full h-[500%] flex flex-col justify-center items-center " data-aos="fade-up">
       <Hero/>
-      <Sponser/>
+      {/* <Sponser/> */}
       <News/>
       {/* <PromotionPartners/> */}
       <About/>
