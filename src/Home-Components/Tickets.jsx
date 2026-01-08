@@ -43,11 +43,11 @@ const Tickets = () => {
                 </ul>
               </p>
             </div>
-            <a href="https://forms.gle/emEx2N2AAssu6MHt9">
+            {/* <a href="https://forms.gle/emEx2N2AAssu6MHt9">
               <button className="-translate-y-7 lg:px-20 px-10 py-3 border-2 border-green-500 bg-green-500 text-white font-semibold hover:bg-green-400  duration-500 transform transition-all  tracking-wide rounded-full flex items-center justify-center gap-2">
                 BOOK NOW <FaArrowRightLong />
               </button>
-            </a>
+            </a> */}
 
           </div>
 
@@ -74,11 +74,11 @@ const Tickets = () => {
                 </h2>
               </p>
             </div>
-            <a href="https://forms.gle/emEx2N2AAssu6MHt9">
+            {/* <a href="https://forms.gle/emEx2N2AAssu6MHt9">
               <button className="-translate-y-7 lg:px-20 px-10 py-3 border-2 border-red-500 bg-red-500 text-white font-semibold hover:bg-red-400  duration-500 transform transition-all tracking-wide rounded-full flex items-center justify-center gap-2">
                 BOOK NOW <FaArrowRightLong />
               </button>
-            </a>
+            </a> */}
 
           </div>
 
@@ -108,11 +108,11 @@ const Tickets = () => {
                 </ul>
               </p>
             </div>
-            <a href="https://forms.gle/emEx2N2AAssu6MHt9">
+            {/* <a href="https://forms.gle/emEx2N2AAssu6MHt9">
               <button className="-translate-y-7 lg:px-20 px-10 py-3 border-2 border-blue-500 bg-blue-500 text-white font-semibold hover:bg-blue-400 duration-500 transform transition-all  tracking-wide rounded-full flex items-center justify-center gap-2">
                 BOOK NOW <FaArrowRightLong />
               </button>
-            </a>
+            </a> */}
           </div>
         </div>
 

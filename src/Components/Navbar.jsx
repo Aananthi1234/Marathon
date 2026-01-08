@@ -22,12 +22,12 @@ const Navbar = () => {
       </div>
 
       <div>
-        <a href="https://forms.gle/emEx2N2AAssu6MHt9" target="_blank">
+        {/* <a href="https://forms.gle/emEx2N2AAssu6MHt9" target="_blank">
           <button className="bg-green-700 text-white px-4 sm:px-10 py-2 font-bold rounded-md text-sm sm:text-lg hover:bg-green-600">
             Register
           </button>
-        </a>
-        {/* <h2 className="text-xs xs:text-sm sm:text-base border p-2 rounded-md text-red-500">Registration Closed</h2> */}
+        </a> */}
+        <h2 className="text-xs xs:text-sm sm:text-base border p-2 rounded-md text-red-500">Registration Closed</h2>
       </div>
     </nav>
   );
